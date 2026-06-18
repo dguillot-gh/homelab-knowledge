@@ -1,0 +1,21 @@
+baseURL = 'http://192.168.0.56:1313/'
+locale = 'en-us'
+title = 'Homelab Documentation'
+theme = 'hextra'
+
+[params]
+  description = 'Homelab container documentation'
+  defaultTheme = 'dark'
+  disableThemeToggle = true
+
+[params.navbar]
+  displayTitle = true
+  displayLogo = false
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[[redirects]]
+  from = '/'
+  to = '/docs/'
+  status = 301

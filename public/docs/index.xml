@@ -1,0 +1,851 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Homelab Documentation – Homelab Containers</title>
+    <link>http://192.168.0.56:1313/docs/</link>
+    <description>Recent content in Homelab Containers on Homelab Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	  <atom:link href="http://192.168.0.56:1313/docs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>ansible</title>
+      <link>http://192.168.0.56:1313/containers/ansible/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.56:1313/containers/ansible/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The &lt;code&gt;ansible&lt;/code&gt; container (VMID 112) serves as a dedicated Linux environment running Debian, configured specifically for automation tasks within the homelab setup. With 512 MB of RAM and a single core, this lightweight LXC provides an efficient, isolated platform for executing complex configuration management and deployment scripts. Its inclusion of the &lt;code&gt;community-script&lt;/code&gt; tag suggests it is pre-configured or intended to host the necessary tools for managing infrastructure tasks, ensuring a stable and dedicated execution environment.&lt;/p&gt;
+&lt;p&gt;This container&amp;rsquo;s primary role in the homelab is to act as the central automation engine. By running Ansible, it is used to manage the configuration, deployment, and state of other virtual machines or containers, streamlining infrastructure management. It facilitates the desired state configuration across the homelab network, allowing users to automate repetitive tasks and maintain consistency, which is foundational for efficient and scalable home lab operations.&lt;/p&gt;
+&lt;h2&gt;Resources&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;resources&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#resources&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;VMID:&lt;/strong&gt; 112&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Status:&lt;/strong&gt; running&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;IP:&lt;/strong&gt; dhcp&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;OS:&lt;/strong&gt; debian&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;RAM:&lt;/strong&gt; 512 MB&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Disk:&lt;/strong&gt; 15.58 GB&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cores:&lt;/strong&gt; 1&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Node:&lt;/strong&gt; pve&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tags:&lt;/strong&gt; community-script, os&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>argus</title>
+      <link>http://192.168.0.56:1313/containers/argus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.56:1313/containers/argus/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The container named argus is a lightweight Linux container running Debian, configured with 512 MB of RAM and 1 core. It is currently running and uses a dynamic IP assignment via DHCP. This setup indicates that argus is utilized as a dedicated, low-resource environment for running specific tasks within the homelab infrastructure. Given its association with community scripts and watcher tags, the container is likely set up to host monitoring tools or automated scripts necessary for system health and security management.&lt;/p&gt;
+&lt;p&gt;The primary role of the argus container is clearly defined by its tagging as a &amp;lsquo;watcher&amp;rsquo; and &amp;lsquo;community-script&amp;rsquo;. It functions as a central point for monitoring various aspects of the homelab environment, potentially tracking system events, resource usage, or security alerts. By housing these scripts, argus streamlines the oversight process, allowing the user to passively monitor the health and operational status of the Proxmox-based system efficiently.&lt;/p&gt;
+&lt;h2&gt;Resources&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;resources&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#resources&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;VMID:&lt;/strong&gt; 120&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Status:&lt;/strong&gt; running&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;IP:&lt;/strong&gt; dhcp&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;OS:&lt;/strong&gt; debian&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;RAM:&lt;/strong&gt; 512 MB&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Disk:&lt;/strong&gt; 2.88 GB&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cores:&lt;/strong&gt; 1&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Node:&lt;/strong&gt; pve&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tags:&lt;/strong&gt; community-script, watcher&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>audiobookshelf</title>
+      <link>http://192.168.0.56:1313/containers/audiobookshelf/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.56:1313/containers/audiobookshelf/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The audiobookshelf container, running on a Debian-based LXC environment, serves as a dedicated media server within the homelab setup. Allocated 2048 MB of RAM and 2 CPU cores, this container utilizes a modest amount of disk space (4.84 GB) to host the necessary software and media libraries. This setup demonstrates a cost-effective method of isolating a specific application, leveraging the efficiency of containerization to manage media tasks without consuming excessive resources on the host system.&lt;/p&gt;
+&lt;p&gt;The primary function of this container is to act as a central hub for managing personal audio content, specifically books and podcasts. By running the audiobookshelf application, it organizes, catalogs, and streams media files, making them accessible across the network. In the context of the homelab, this system fulfills the role of a personal media management service, allowing the user to centrally organize their library and enjoy their audio content on demand.&lt;/p&gt;
+&lt;h2&gt;Resources&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;resources&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#resources&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;VMID:&lt;/strong&gt; 121&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Status:&lt;/strong&gt; running&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;IP:&lt;/strong&gt; dhcp&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;OS:&lt;/strong&gt; debian&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;RAM:&lt;/strong&gt; 2048 MB&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Disk:&lt;/strong&gt; 4.84 GB&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cores:&lt;/strong&gt; 2&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Node:&lt;/strong&gt; pve&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tags:&lt;/strong&gt; audiobook, community-script, podcast&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>caddy</title>
+      <link>http://192.168.0.56:1313/containers/caddy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.56:1313/containers/caddy/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This LXC container, named caddy, is deployed within the homelab environment, providing a dedicated instance for running a web server. Operating on a Debian base, the container utilizes 512 MB of RAM and approximately 19.52 GB of disk space, configured with a single CPU core. The primary application within this container is Caddy, a popular and modern web server known for automatically handling SSL/TLS certificates and providing simple, robust configuration management for HTTP traffic.&lt;/p&gt;
+&lt;p&gt;Caddy’s role in the homelab is to serve as a crucial entry point and internal service provider. Due to its configuration and associated tags, it is likely used to host internal services or expose specific project resources securely to the local network. The inclusion of tags like tailscale and community-script indicates that this setup is integrated into a more complex, networked infrastructure, leveraging secure overlay networking and community-developed scripts to manage and secure the services hosted by this container.&lt;/p&gt;
+&lt;h2&gt;Resources&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;resources&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#resources&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;VMID:&lt;/strong&gt; 118&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Status:&lt;/strong&gt; running&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;IP:&lt;/strong&gt; dhcp&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;OS:&lt;/strong&gt; debian&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;RAM:&lt;/strong&gt; 512 MB&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Disk:&lt;/strong&gt; 19.52 GB&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cores:&lt;/strong&gt; 1&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Node:&lt;/strong&gt; pve&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tags:&lt;/strong&gt; community-script, tailscale, webserver&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>databasus</title>
+      <link>http://192.168.0.56:1313/containers/databasus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.56:1313/containers/databasus/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The container named databasus, running on a Debian base and utilizing 2GB of RAM, serves as a dedicated database server within the homelab environment. This setup is clearly designed to host a PostgreSQL instance, as indicated by its associated tags and references to community scripts. The container is configured with 2 CPU cores and sufficient disk space to manage the necessary database files and operational data.&lt;/p&gt;
+&lt;p&gt;The primary role of the databasus container is to provide a robust, self-contained database service, likely managed and provisioned using community-developed setup scripts. By isolating the database workload into an LXC container, it facilitates easy deployment, management, and potential backup strategies within the homelab. This setup ensures that core data services are separated and easily maintained, allowing for efficient organization of services like backup and data storage.&lt;/p&gt;
+&lt;h2&gt;Resources&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;resources&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#resources&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;VMID:&lt;/strong&gt; 116&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Status:&lt;/strong&gt; running&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;IP:&lt;/strong&gt; dhcp&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;OS:&lt;/strong&gt; debian&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;RAM:&lt;/strong&gt; 2048 MB&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Disk:&lt;/strong&gt; 7.78 GB&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cores:&lt;/strong&gt; 2&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Node:&lt;/strong&gt; pve&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tags:&lt;/strong&gt; backup, community-script, database, postgresql&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>docker</title>
+      <link>http://192.168.0.56:1313/containers/docker/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.56:1313/containers/docker/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This LXC container, named &amp;ldquo;docker,&amp;rdquo; serves as a foundational environment within the homelab, running a Debian operating system. Allocated 4096 MB of RAM and 3 CPU cores, it utilizes 136.74 GB of disk space. This setup provides a stable, dedicated operating system base specifically configured to host containerized applications, making it the central platform for managing various services and projects within the environment.&lt;/p&gt;
+&lt;p&gt;Given its explicit tagging with &amp;ldquo;docker&amp;rdquo; and &amp;ldquo;community-script,&amp;rdquo; the primary role of this container is to act as the core engine for deploying and managing Docker-based services. It likely runs various automated scripts or community-developed tools, facilitating the setup, execution, and isolation of services. Furthermore, the inclusion of the &amp;ldquo;tailscale&amp;rdquo; tag indicates that this container is also leveraged for secure, private networking and access management across the homelab infrastructure.&lt;/p&gt;
+&lt;h2&gt;Resources&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;resources&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#resources&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;VMID:&lt;/strong&gt; 119&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Status:&lt;/strong&gt; running&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;IP:&lt;/strong&gt; dhcp&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;OS:&lt;/strong&gt; debian&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;RAM:&lt;/strong&gt; 4096 MB&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Disk:&lt;/strong&gt; 136.74 GB&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cores:&lt;/strong&gt; 3&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Node:&lt;/strong&gt; pve&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tags:&lt;/strong&gt; community-script, docker, tailscale&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>fileflows</title>
+      <link>http://192.168.0.56:1313/containers/fileflows/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.56:1313/containers/fileflows/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The fileflows container is a Debian-based LXC running within the homelab environment, configured with 2 CPU cores and 4GB of RAM. This container is specifically designed to execute community scripts, evidenced by its associated tags and external links. Its core function is likely centered around file management and automation, making it a dedicated workspace for running custom scripts that streamline various tasks within the system.&lt;/p&gt;
+&lt;p&gt;Given the name and tags, fileflows likely serves as a dedicated automation utility, potentially managing the flow, synchronization, or processing of files, possibly including media assets. Its role in the homelab is to provide a managed, isolated environment for running community-developed automation tools. This allows users to implement complex scripting solutions for file handling and media organization without impacting the stability of the main host system.&lt;/p&gt;
+&lt;h2&gt;Resources&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;resources&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#resources&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;VMID:&lt;/strong&gt; 115&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Status:&lt;/strong&gt; running&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;IP:&lt;/strong&gt; dhcp&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;OS:&lt;/strong&gt; debian&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;RAM:&lt;/strong&gt; 4048 MB&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Disk:&lt;/strong&gt; 7.78 GB&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cores:&lt;/strong&gt; 2&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Node:&lt;/strong&gt; pve&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tags:&lt;/strong&gt; automation, community-script, media&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>flaresolverr</title>
+      <link>http://192.168.0.56:1313/containers/flaresolverr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.56:1313/containers/flaresolverr/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The flaresolverr container is a running LXC instance provisioned on a Debian operating system within the homelab environment. It utilizes 512 MB of RAM and 1 CPU core, operating with a small disk allocation of 3.86 GB. This setup demonstrates a lightweight, dedicated environment often used for running specific services or automation tools. The container is accessible via DHCP and is tagged with arr-stack and community-script, indicating its role in managing software applications and executing custom scripts for system management.&lt;/p&gt;
+&lt;p&gt;Based on its name and associated tags, the flaresolverr container likely serves as an automated utility or solver for specific infrastructure tasks. Its association with &amp;ldquo;arr-stack&amp;rdquo; suggests it is involved in setting up or managing applications that require service replication, commonly seen in containerized environments like Docker. Functioning as a community script executor, this container probably runs custom scripts to simplify complex deployment or troubleshooting processes, acting as a specialized automation engine for the homelab infrastructure.&lt;/p&gt;
+&lt;h2&gt;Resources&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;resources&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#resources&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;VMID:&lt;/strong&gt; 105&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Status:&lt;/strong&gt; running&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;IP:&lt;/strong&gt; dhcp&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;OS:&lt;/strong&gt; debian&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;RAM:&lt;/strong&gt; 512 MB&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Disk:&lt;/strong&gt; 3.86 GB&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cores:&lt;/strong&gt; 1&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Node:&lt;/strong&gt; pve&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tags:&lt;/strong&gt; arr-stack, community-script&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>gitea</title>
+      <link>http://192.168.0.56:1313/containers/gitea/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.56:1313/containers/gitea/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This container, named gitea, is a lightweight Linux container utilizing a Debian operating system, provisioned within a homelab environment. It is configured with 1024 MB of RAM and a single CPU core, allocating 7.78 GB of disk space. This setup demonstrates efficient resource management, utilizing the LXC technology to host a specific application service in a containerized format, ensuring minimal overhead while providing a dedicated execution environment for the service.&lt;/p&gt;
+&lt;p&gt;Based on its name and associated tags, the gitea container is clearly set up to run the Gitea application, which functions as a self-hosted Git repository and collaboration platform. Its role within the homelab is to serve as a central source control management system, allowing the user to host private code repositories, manage projects, and facilitate collaborative development entirely within the private network infrastructure. The inclusion of the git tag further confirms its core function as a dedicated Git service.&lt;/p&gt;
+&lt;h2&gt;Resources&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;resources&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#resources&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;VMID:&lt;/strong&gt; 103&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Status:&lt;/strong&gt; running&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;IP:&lt;/strong&gt; dhcp&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;OS:&lt;/strong&gt; debian&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;RAM:&lt;/strong&gt; 1024 MB&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Disk:&lt;/strong&gt; 7.78 GB&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cores:&lt;/strong&gt; 1&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Node:&lt;/strong&gt; pve&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tags:&lt;/strong&gt; community-script, git&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>gitea-mirror</title>
+      <link>http://192.168.0.56:1313/containers/gitea-mirror/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.56:1313/containers/gitea-mirror/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This LXC container, named gitea-mirror, is a Debian-based environment deployed within the homelab infrastructure. It is configured with 2GB of RAM, 2 CPU cores, and approximately 5.82 GB of storage, providing sufficient resources to run specialized services. The container is utilized to host a synchronization service, leveraging community scripts to manage the mirroring process.&lt;/p&gt;
+&lt;p&gt;The primary function of the gitea-mirror container is to act as a redundant mirror for a Gitea instance. Its role in the homelab is to create a synchronized, read-only copy of Git repositories, ensuring data redundancy and accessibility. This setup allows the homelab owner to maintain synchronized backups or alternative access points for code repositories, enhancing the overall reliability and availability of the self-hosted services.&lt;/p&gt;
+&lt;h2&gt;Resources&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;resources&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#resources&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;VMID:&lt;/strong&gt; 107&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Status:&lt;/strong&gt; running&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;IP:&lt;/strong&gt; dhcp&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;OS:&lt;/strong&gt; debian&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;RAM:&lt;/strong&gt; 2048 MB&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Disk:&lt;/strong&gt; 5.82 GB&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cores:&lt;/strong&gt; 2&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Node:&lt;/strong&gt; pve&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tags:&lt;/strong&gt; community-script, gitea, mirror&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>github-runner</title>
+      <link>http://192.168.0.56:1313/containers/github-runner/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.56:1313/containers/github-runner/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The github-runner container is an LXC instance running a Debian operating system, configured within the homelab environment. Allocated 2048 MB of RAM and 2 CPU cores, this container utilizes approximately 7.78 GB of disk space, providing sufficient resources for running complex build processes. It serves as a foundational, lightweight platform designed specifically for executing automated tasks in an isolated manner, adhering to the principles of containerization within the Proxmox VE setup.&lt;/p&gt;
+&lt;p&gt;This specific LXC is dedicated to Continuous Integration (CI) workflows, evidenced by its naming and tags. It functions as a dedicated runner for community scripts, allowing the homelab environment to autonomously pull, build, and test code directly from GitHub repositories. Its primary role is to provide a standardized, reproducible environment for automated software delivery, streamlining the development and deployment processes that are central to the homelab&amp;rsquo;s functionality.&lt;/p&gt;
+&lt;h2&gt;Resources&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;resources&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#resources&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;VMID:&lt;/strong&gt; 129&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Status:&lt;/strong&gt; running&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;IP:&lt;/strong&gt; dhcp&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;OS:&lt;/strong&gt; debian&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;RAM:&lt;/strong&gt; 2048 MB&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Disk:&lt;/strong&gt; 7.78 GB&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cores:&lt;/strong&gt; 2&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Node:&lt;/strong&gt; pve&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tags:&lt;/strong&gt; ci, community-script&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>homelable</title>
+      <link>http://192.168.0.56:1313/containers/homelable/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.56:1313/containers/homelable/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The homelable container is a Debian-based LXC instance running within the homelab environment, allocated 2048 MB of RAM and 2 CPU cores. This container serves as a dedicated platform for running specialized scripts and services, leveraging its open-source nature and integration with community tools. Its configuration indicates it is optimized for a specific functional role, providing a stable and lightweight environment for complex system operations.&lt;/p&gt;
+&lt;p&gt;This container is primarily deployed for monitoring, network management, and data visualization tasks. By leveraging its tags, homelable acts as a centralized hub for tracking system metrics and network performance across the homelab. It facilitates the deployment of community-scripting workflows, allowing users to easily manage and visualize the operational status of the network and other services running on the host system.&lt;/p&gt;
+&lt;h2&gt;Resources&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;resources&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#resources&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;VMID:&lt;/strong&gt; 113&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Status:&lt;/strong&gt; running&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;IP:&lt;/strong&gt; dhcp&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;OS:&lt;/strong&gt; debian&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;RAM:&lt;/strong&gt; 2048 MB&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Disk:&lt;/strong&gt; 7.78 GB&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cores:&lt;/strong&gt; 2&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Node:&lt;/strong&gt; pve&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tags:&lt;/strong&gt; community-script, monitoring, network, visualization&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>homepage</title>
+      <link>http://192.168.0.56:1313/containers/homepage/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.56:1313/containers/homepage/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The container named homepage (VMID 117) serves as a key component in the homelab environment, running a Debian operating system with 4096 MB of RAM and 2 CPU cores. This setup provides a stable, lightweight platform for hosting specific services. The container is tagged with community-script and dashboard, indicating its primary function is not a general server but rather the execution of specialized software or a graphical interface.&lt;/p&gt;
+&lt;p&gt;The role of this LXC is to act as a centralized dashboard or runner for community scripts, specifically leveraging resources from projects like community-scripts.org. By hosting this container, the homelab user gains an easily accessible point of control or monitoring for various automated scripts, simplifying management and providing a cohesive overview of operational data within the Proxmox environment.&lt;/p&gt;
+&lt;h2&gt;Resources&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;resources&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#resources&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;VMID:&lt;/strong&gt; 117&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Status:&lt;/strong&gt; running&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;IP:&lt;/strong&gt; dhcp&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;OS:&lt;/strong&gt; debian&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;RAM:&lt;/strong&gt; 4096 MB&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Disk:&lt;/strong&gt; 5.82 GB&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cores:&lt;/strong&gt; 2&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Node:&lt;/strong&gt; pve&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tags:&lt;/strong&gt; community-script, dashboard&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>hugo-docs</title>
+      <link>http://192.168.0.56:1313/containers/hugo-docs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.56:1313/containers/hugo-docs/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This container, named hugo-docs, serves as a dedicated Linux environment running Debian, operating within the LXC framework in the homelab. It is provisioned with 1048 MB of RAM and 1 core, providing a lightweight yet functional platform. The container is allocated 19.52 GB of disk space, which is ample for running web applications and associated documentation files.&lt;/p&gt;
+&lt;p&gt;Based on its naming convention and associated tags, this container is primarily used for hosting a static website, likely built using the Hugo static site generator. Its role in the homelab is to serve as a testing environment for community-scripts and operating system practices. It allows the user to practice deploying and managing a dedicated Debian system within a containerized environment, aligning with the objectives of community-driven system administration and knowledge sharing.&lt;/p&gt;
+&lt;h2&gt;Resources&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;resources&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#resources&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;VMID:&lt;/strong&gt; 128&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Status:&lt;/strong&gt; running&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;IP:&lt;/strong&gt; dhcp&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;OS:&lt;/strong&gt; debian&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;RAM:&lt;/strong&gt; 1048 MB&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Disk:&lt;/strong&gt; 19.52 GB&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cores:&lt;/strong&gt; 1&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Node:&lt;/strong&gt; pve&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tags:&lt;/strong&gt; community-script, os&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>jellyfin</title>
+      <link>http://192.168.0.56:1313/containers/jellyfin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.56:1313/containers/jellyfin/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This LXC container, named jellyfin, serves as a dedicated media server within the homelab environment. It is built upon a Debian operating system and is provisioned with 3072 MB of RAM and 2 CPU cores, ensuring sufficient resources for media transcoding and serving. The container utilizes dynamic DHCP addressing, integrating seamlessly into the local network structure, and is allocated 78.19 GB of disk space to store extensive media libraries and configuration files.&lt;/p&gt;
+&lt;p&gt;The primary function of this container is to host the Jellyfin application, an open-source platform for managing and streaming multimedia content. Its role in the homelab is critical for centralizing media management, allowing the user to organize, store, and stream video and audio content to various devices across the home. This setup transforms the container into a centralized media hub, making large collections easily accessible and streamable throughout the network.&lt;/p&gt;
+&lt;h2&gt;Resources&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;resources&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#resources&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;VMID:&lt;/strong&gt; 100&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Status:&lt;/strong&gt; running&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;IP:&lt;/strong&gt; dhcp&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;OS:&lt;/strong&gt; debian&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;RAM:&lt;/strong&gt; 3072 MB&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Disk:&lt;/strong&gt; 78.19 GB&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cores:&lt;/strong&gt; 2&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Node:&lt;/strong&gt; pve&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tags:&lt;/strong&gt; community-script, media&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>jellyseerr</title>
+      <link>http://192.168.0.56:1313/containers/jellyseerr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.56:1313/containers/jellyseerr/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The jellyseerr container is a Debian-based LXC running within the homelab environment, provisioned with 2048 MB of RAM and 2 CPU cores. This container utilizes a dedicated 31.2 GB disk space, providing a stable and dedicated environment for hosting specialized services. The setup is tagged with community-script, indicating it likely relies on external scripts or community configurations for its installation and operation, ensuring a streamlined deployment process for this specific application.&lt;/p&gt;
+&lt;p&gt;This container serves as a dedicated media and home automation interface within the homelab. Its primary function is to run the Jellyseerr application, which acts as a centralized control panel for managing smart home devices and media collections. By hosting this service in a lightweight LXC, it efficiently utilizes resources while providing essential functionality for managing interconnected smart home systems and media assets.&lt;/p&gt;
+&lt;h2&gt;Resources&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;resources&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#resources&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;VMID:&lt;/strong&gt; 108&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Status:&lt;/strong&gt; running&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;IP:&lt;/strong&gt; dhcp&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;OS:&lt;/strong&gt; debian&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;RAM:&lt;/strong&gt; 2048 MB&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Disk:&lt;/strong&gt; 31.2 GB&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cores:&lt;/strong&gt; 2&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Node:&lt;/strong&gt; pve&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tags:&lt;/strong&gt; community-script&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>lidarr</title>
+      <link>http://192.168.0.56:1313/containers/lidarr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.56:1313/containers/lidarr/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The lidarr container, running as an LXC with Debian as its operating system, serves as a dedicated media management service within the homelab environment. Allocated 1024 MB of RAM and two CPU cores, this container utilizes a specific disk partition of 23.54 GB to host its operations. This setup demonstrates effective resource utilization, isolating the media application and its dependencies into a lightweight, efficient container environment managed by the underlying Proxmox infrastructure.&lt;/p&gt;
+&lt;p&gt;Functionally, this container is deployed to manage and organize media assets. Given its associated tags, including torrent and usenet, the lidarr instance is primarily responsible for indexing, organizing, and tracking media files sourced from various networks. Its role is crucial for automating the process of finding, sorting, and managing a personal media library, integrating P2P and usenet acquisition methods into a centralized, automated system within the homelab.&lt;/p&gt;
+&lt;h2&gt;Resources&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;resources&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#resources&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;VMID:&lt;/strong&gt; 127&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Status:&lt;/strong&gt; running&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;IP:&lt;/strong&gt; dhcp&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;OS:&lt;/strong&gt; debian&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;RAM:&lt;/strong&gt; 1024 MB&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Disk:&lt;/strong&gt; 23.54 GB&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cores:&lt;/strong&gt; 2&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Node:&lt;/strong&gt; pve&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tags:&lt;/strong&gt; arr, community-script, torrent, usenet&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>navidrome</title>
+      <link>http://192.168.0.56:1313/containers/navidrome/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.56:1313/containers/navidrome/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The navidrome container, designated VMID 122, is a Debian-based LXC running within the homelab environment. This container is allocated 1024 MB of RAM and 2 CPU cores, utilizing 35.35 GB of disk space. Its designation as a community-script and music-related container indicates that it is set up to run a specific application focused on media management, providing a dedicated, lightweight environment for handling audio services.&lt;/p&gt;
+&lt;p&gt;This container is dedicated to hosting Navidrome, a popular media server application. Its primary role in the homelab is to serve as a dedicated music streaming and management system. By isolating Navidrome within an LXC, the setup ensures that the music server operates efficiently and independently from the host system, allowing for stable, dedicated management of music libraries and streaming protocols.&lt;/p&gt;
+&lt;h2&gt;Resources&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;resources&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#resources&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;VMID:&lt;/strong&gt; 122&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Status:&lt;/strong&gt; running&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;IP:&lt;/strong&gt; dhcp&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;OS:&lt;/strong&gt; debian&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;RAM:&lt;/strong&gt; 1024 MB&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Disk:&lt;/strong&gt; 35.35 GB&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cores:&lt;/strong&gt; 2&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Node:&lt;/strong&gt; pve&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tags:&lt;/strong&gt; community-script, music&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Node: pve</title>
+      <link>http://192.168.0.56:1313/nodes/pve/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.56:1313/nodes/pve/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The system is configured as a Proxmox Virtual Environment (PVE) node, serving as the central hypervisor in the homelab environment. Running a customized Linux kernel (version 6.17.13-3-pve) optimized for virtualization tasks, this machine is responsible for managing and allocating resources to various virtual machines and containers. The hostname pve clearly identifies its role as the core management platform controlling the virtualized infrastructure.&lt;/p&gt;
+&lt;p&gt;The underlying hardware provides a solid foundation for virtualization. The system utilizes a 6-core Intel Core i5-8500T processor clocked at 2.10GHz, offering sufficient processing power for running multiple VMs concurrently. Memory capacity is substantial, with 31.0 GB of total RAM installed, currently with 8.6 GB actively utilized by the operating system, leaving ample resources available for guest operating systems.&lt;/p&gt;
+&lt;h2&gt;Health Snapshot&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;health-snapshot&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#health-snapshot&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;CPU Usage:&lt;/strong&gt; 11.5%&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Load Avg (1/5/15):&lt;/strong&gt; 1.70 / 1.51 / 2.06&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Memory:&lt;/strong&gt; 8.6 / 31.0 GB (27.7%)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Root FS:&lt;/strong&gt; 29.5 / 64.06 GB (46.0%)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Hardware&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;hardware&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#hardware&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;CPU:&lt;/strong&gt; Intel(R) Core(TM) i5-8500T CPU @ 2.10GHz&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cores / Sockets:&lt;/strong&gt; 6 / 1&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Kernel:&lt;/strong&gt; Linux 6.17.13-3-pve #1 SMP PREEMPT_DYNAMIC PMX 6.17.13-3 (2026-03-31T21:50Z)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Storage Pools&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;storage-pools&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#storage-pools&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Name&lt;/th&gt;
+          &lt;th&gt;Type&lt;/th&gt;
+          &lt;th style=&#34;text-align: right&#34;&gt;Total&lt;/th&gt;
+          &lt;th style=&#34;text-align: right&#34;&gt;Used&lt;/th&gt;
+          &lt;th style=&#34;text-align: right&#34;&gt;Free&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;TGroup1&lt;/td&gt;
+          &lt;td&gt;lvm&lt;/td&gt;
+          &lt;td style=&#34;text-align: right&#34;&gt;953.87 GB&lt;/td&gt;
+          &lt;td style=&#34;text-align: right&#34;&gt;565.0 GB&lt;/td&gt;
+          &lt;td style=&#34;text-align: right&#34;&gt;388.87 GB&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;samsung256&lt;/td&gt;
+          &lt;td&gt;lvm&lt;/td&gt;
+          &lt;td style=&#34;text-align: right&#34;&gt;0.0 GB&lt;/td&gt;
+          &lt;td style=&#34;text-align: right&#34;&gt;0.0 GB&lt;/td&gt;
+          &lt;td style=&#34;text-align: right&#34;&gt;0.0 GB&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;local-lvm&lt;/td&gt;
+          &lt;td&gt;lvmthin&lt;/td&gt;
+          &lt;td style=&#34;text-align: right&#34;&gt;130.27 GB&lt;/td&gt;
+          &lt;td style=&#34;text-align: right&#34;&gt;0.0 GB&lt;/td&gt;
+          &lt;td style=&#34;text-align: right&#34;&gt;130.27 GB&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;local&lt;/td&gt;
+          &lt;td&gt;dir&lt;/td&gt;
+          &lt;td style=&#34;text-align: right&#34;&gt;64.06 GB&lt;/td&gt;
+          &lt;td style=&#34;text-align: right&#34;&gt;29.5 GB&lt;/td&gt;
+          &lt;td style=&#34;text-align: right&#34;&gt;31.26 GB&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;backupnfs&lt;/td&gt;
+          &lt;td&gt;nfs&lt;/td&gt;
+          &lt;td style=&#34;text-align: right&#34;&gt;14708.41 GB&lt;/td&gt;
+          &lt;td style=&#34;text-align: right&#34;&gt;9544.12 GB&lt;/td&gt;
+          &lt;td style=&#34;text-align: right&#34;&gt;5164.21 GB&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>openwebui</title>
+      <link>http://192.168.0.56:1313/containers/openwebui/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.56:1313/containers/openwebui/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The LXC container named openwebui serves as a dedicated environment for hosting an Open WebUI instance. Running on a Debian base with significant allocated resources, including 16GB of RAM and 3 CPU cores, this container is configured to provide a stable and performant platform for running complex applications. Its configuration reflects a focus on integrating community-developed scripts, suggesting it utilizes specialized tools for its operation and setup within the homelab infrastructure.&lt;/p&gt;
+&lt;p&gt;Functionally, this container acts as a critical interface layer for interacting with large language models (LLMs) or other AI services. Its role in the homelab is to provide a centralized, user-friendly graphical interface, abstracting the complexity of the underlying AI services. By running Open WebUI, the container allows users to manage, chat with, and control various AI functionalities directly through a web-based application, enhancing the homelab&amp;rsquo;s capability for local AI deployment and accessibility.&lt;/p&gt;
+&lt;h2&gt;Resources&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;resources&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#resources&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;VMID:&lt;/strong&gt; 130&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Status:&lt;/strong&gt; running&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;IP:&lt;/strong&gt; dhcp&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;OS:&lt;/strong&gt; debian&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;RAM:&lt;/strong&gt; 16384 MB&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Disk:&lt;/strong&gt; 58.76 GB&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cores:&lt;/strong&gt; 3&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Node:&lt;/strong&gt; pve&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tags:&lt;/strong&gt; ai, community-script, interface&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>prowlarr</title>
+      <link>http://192.168.0.56:1313/containers/prowlarr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.56:1313/containers/prowlarr/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This LXC container, named prowlarr, serves as a dedicated environment for running specialized media management services within the homelab infrastructure. It is provisioned on a Debian operating system, utilizing 1024 MB of RAM and two CPU cores, providing sufficient resources for its intended operations. The container is running successfully and is configured to obtain its network address via DHCP, integrating smoothly into the existing network topology managed by the hypervisor.&lt;/p&gt;
+&lt;p&gt;Based on its naming and associated tags, prowlarr functions as a critical component in the automated management of media sources and indexing for the homelab. It is likely running an indexer application, responsible for monitoring and managing various sources (such as torrent trackers or media indexers) to facilitate the discovery and organization of media content. Its presence, tagged as part of an &amp;ldquo;arr-stack,&amp;rdquo; indicates that it plays a key role in automating the upstream process of finding and tracking desired files, significantly simplifying the workflow for media consumption.&lt;/p&gt;
+&lt;h2&gt;Resources&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;resources&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#resources&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;VMID:&lt;/strong&gt; 104&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Status:&lt;/strong&gt; running&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;IP:&lt;/strong&gt; dhcp&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;OS:&lt;/strong&gt; debian&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;RAM:&lt;/strong&gt; 1024 MB&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Disk:&lt;/strong&gt; 3.86 GB&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cores:&lt;/strong&gt; 2&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Node:&lt;/strong&gt; pve&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tags:&lt;/strong&gt; arr-stack, community-script&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>pulse</title>
+      <link>http://192.168.0.56:1313/containers/pulse/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.56:1313/containers/pulse/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The container named pulse, provisioned as VMID 123, serves as a dedicated lightweight system within the homelab environment. Running a Debian operating system, this LXC is configured with 1024 MB of RAM and 1 CPU core, utilizing approximately 3.86 GB of disk space. Its network configuration is dynamic, receiving an IP address via DHCP, making it easily integrated into the local network infrastructure.&lt;/p&gt;
+&lt;p&gt;This container is explicitly tagged with community-script, monitoring, and proxmox roles, indicating its primary function is operational rather than serving as a general-purpose server. Given the associated links to community scripts and Proxmox tools, pulse likely functions as a specialized monitoring agent or a containerized execution environment for running various community-developed scripts, enabling advanced oversight and management of the overall homelab infrastructure.&lt;/p&gt;
+&lt;h2&gt;Resources&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;resources&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#resources&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;VMID:&lt;/strong&gt; 123&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Status:&lt;/strong&gt; running&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;IP:&lt;/strong&gt; dhcp&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;OS:&lt;/strong&gt; debian&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;RAM:&lt;/strong&gt; 1024 MB&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Disk:&lt;/strong&gt; 3.86 GB&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cores:&lt;/strong&gt; 1&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Node:&lt;/strong&gt; pve&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tags:&lt;/strong&gt; community-script, monitoring, proxmox&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>radarr</title>
+      <link>http://192.168.0.56:1313/containers/radarr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.56:1313/containers/radarr/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This LXC container, named radarr, serves as a dedicated service within the homelab environment, running on a Debian operating system. Configured with 1024 MB of RAM and 2 CPU cores, the container utilizes a 13.68 GB disk space to host its applications. It is currently running and is assigned an IP address via DHCP, integrating seamlessly into the network infrastructure. The container is categorized with tags such as arr-stack and community-script, indicating it is part of a curated set of automated media management tools deployed for ease of system configuration.&lt;/p&gt;
+&lt;p&gt;The primary function of this container is to operate Radarr, a popular application used for organizing and managing movies and TV shows. In the context of the homelab, Radarr acts as the central indexer, monitoring media sources and ensuring that collections of films and television series are properly organized and ready for consumption. This service is crucial for automating media management, freeing up manual effort and establishing a robust, automated media library within the personal network.&lt;/p&gt;
+&lt;h2&gt;Resources&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;resources&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#resources&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;VMID:&lt;/strong&gt; 102&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Status:&lt;/strong&gt; running&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;IP:&lt;/strong&gt; dhcp&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;OS:&lt;/strong&gt; debian&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;RAM:&lt;/strong&gt; 1024 MB&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Disk:&lt;/strong&gt; 13.68 GB&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cores:&lt;/strong&gt; 2&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Node:&lt;/strong&gt; pve&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tags:&lt;/strong&gt; arr-stack, community-script&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>semaphore</title>
+      <link>http://192.168.0.56:1313/containers/semaphore/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.56:1313/containers/semaphore/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The container named semaphore is a running LXC instance based on Ubuntu, allocated 2048 MB of RAM and 2 CPU cores within the homelab environment. It utilizes a small disk partition, totaling 3.86 GB, providing a lightweight, self-contained operating environment for specific tasks. This setup demonstrates a focus on resource efficiency, utilizing containerization for deploying specialized tooling within the homelab infrastructure.&lt;/p&gt;
+&lt;p&gt;Given its name and associated tags, semaphore likely functions as an automated community script or utility related to development operations or system management. Its role in the homelab is likely to manage concurrent processes, implement synchronization mechanisms, or facilitate complex workflow orchestration. By running this specific script, the user is leveraging a shared community tool to manage complex operational requirements, fitting perfectly into a dev_ops focused environment.&lt;/p&gt;
+&lt;h2&gt;Resources&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;resources&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#resources&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;VMID:&lt;/strong&gt; 111&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Status:&lt;/strong&gt; running&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;IP:&lt;/strong&gt; dhcp&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;OS:&lt;/strong&gt; ubuntu&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;RAM:&lt;/strong&gt; 2048 MB&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Disk:&lt;/strong&gt; 3.86 GB&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cores:&lt;/strong&gt; 2&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Node:&lt;/strong&gt; pve&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tags:&lt;/strong&gt; community-script, dev_ops&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>sonarr</title>
+      <link>http://192.168.0.56:1313/containers/sonarr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.56:1313/containers/sonarr/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This LXC container, named sonarr, serves as a dedicated media management service running on a Debian operating system within the homelab environment. The container is provisioned with 1024 MB of RAM and 2 CPU cores, providing adequate resources for its automated operations. It utilizes a dynamically assigned IP address and a dedicated disk space of 3.86 GB, ensuring stable operation. The container is tagged with arr-stack and community-script, indicating it is deployed using community scripts and is part of an automated media stack.&lt;/p&gt;
+&lt;p&gt;Sonarr is a core component of the homelab&amp;rsquo;s media server infrastructure, specializing in the automated organization of digital content. Its primary role is to monitor various indexers and download clients, automatically sorting and organizing downloaded movies and television shows into a central library. By running Sonarr in a container, the setup ensures that this essential automation task is isolated, manageable, and efficiently deployed, acting as a critical automation script for managing media consumption within the homelab.&lt;/p&gt;
+&lt;h2&gt;Resources&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;resources&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#resources&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;VMID:&lt;/strong&gt; 101&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Status:&lt;/strong&gt; running&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;IP:&lt;/strong&gt; dhcp&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;OS:&lt;/strong&gt; debian&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;RAM:&lt;/strong&gt; 1024 MB&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Disk:&lt;/strong&gt; 3.86 GB&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cores:&lt;/strong&gt; 2&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Node:&lt;/strong&gt; pve&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tags:&lt;/strong&gt; arr-stack, community-script&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>syncthing</title>
+      <link>http://192.168.0.56:1313/containers/syncthing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.56:1313/containers/syncthing/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This LXC container, named syncthing, serves as a dedicated environment for running the Syncthing application, a popular decentralized file synchronization tool. It is provisioned on a Debian operating system, utilizing 2048 MB of RAM and 2 CPU cores to ensure stable operation. The container occupies 15.64 GB of disk space, providing sufficient room for storing synchronized files and configuration data. This setup demonstrates a common practice in homelab environments where specific services are isolated and managed efficiently via lightweight containers.&lt;/p&gt;
+&lt;p&gt;The primary role of this container is to facilitate seamless file synchronization across various devices within the homelab network. By running Syncthing, this instance acts as a central point for maintaining data consistency between different servers, NAS devices, or personal computers. It is crucial for managing media, backups, and shared documents, enabling users to maintain synchronized access to their data regardless of which machine they are currently using.&lt;/p&gt;
+&lt;h2&gt;Resources&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;resources&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#resources&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;VMID:&lt;/strong&gt; 106&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Status:&lt;/strong&gt; running&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;IP:&lt;/strong&gt; dhcp&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;OS:&lt;/strong&gt; debian&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;RAM:&lt;/strong&gt; 2048 MB&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Disk:&lt;/strong&gt; 15.64 GB&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cores:&lt;/strong&gt; 2&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Node:&lt;/strong&gt; pve&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tags:&lt;/strong&gt; community-script, sync&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>tailscalecity</title>
+      <link>http://192.168.0.56:1313/containers/tailscalecity/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.56:1313/containers/tailscalecity/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The container named tailscalecity is a Debian-based LXC running in the homelab environment. It functions as a foundational system, utilizing minimal resources (1 GB RAM and 1 core) to host specific services or tools defined by community scripts. The inclusion of the tailscale tag indicates that this container is primarily configured for secure, mesh networking, allowing access to the homelab resources securely and privately via the tailscale network overlay.&lt;/p&gt;
+&lt;p&gt;This container&amp;rsquo;s role in the homelab is centered on providing an easily deployable and secure platform for specific tasks. By leveraging community scripts, it streamlines the setup process, allowing the administrator to quickly spin up a lightweight Debian environment ready for specialized functions. Essentially, it serves as a foundational, secure node for running targeted applications while integrating seamlessly into the broader, secure network infrastructure of the homelab.&lt;/p&gt;
+&lt;h2&gt;Resources&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;resources&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#resources&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;VMID:&lt;/strong&gt; 114&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Status:&lt;/strong&gt; running&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;IP:&lt;/strong&gt; dhcp&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;OS:&lt;/strong&gt; debian&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;RAM:&lt;/strong&gt; 1024 MB&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Disk:&lt;/strong&gt; 9.75 GB&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cores:&lt;/strong&gt; 1&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Node:&lt;/strong&gt; pve&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tags:&lt;/strong&gt; community-script, os, tailscale&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>tunarr</title>
+      <link>http://192.168.0.56:1313/containers/tunarr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.56:1313/containers/tunarr/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The tunarr LXC is a Debian-based container running within the homelab environment, utilizing 2 GB of RAM and 3 CPU cores. This container is specifically provisioned to host the Tunarr application, a well-known media server utility. The configuration suggests a resource-efficient setup, leveraging the LXC virtualization to isolate the services while keeping the footprint manageable within the Proxmox environment.&lt;/p&gt;
+&lt;p&gt;The primary role of this container is to function as a centralized IPTV media server. By running Tunarr, this LXC aggregates various IPTV streams, organizes them, and makes them accessible to other devices or clients within the homelab. This setup allows for the centralized management and smooth distribution of television content, serving as a dedicated media backbone for streaming services within the home network.&lt;/p&gt;
+&lt;h2&gt;Resources&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;resources&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#resources&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;VMID:&lt;/strong&gt; 125&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Status:&lt;/strong&gt; running&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;IP:&lt;/strong&gt; dhcp&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;OS:&lt;/strong&gt; debian&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;RAM:&lt;/strong&gt; 2024 MB&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Disk:&lt;/strong&gt; 4.84 GB&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cores:&lt;/strong&gt; 3&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Node:&lt;/strong&gt; pve&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tags:&lt;/strong&gt; community-script, iptv&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>uptimekuma</title>
+      <link>http://192.168.0.56:1313/containers/uptimekuma/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.56:1313/containers/uptimekuma/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The uptimekuma container, identified as VMID 109, serves as a dedicated monitoring service within the homelab environment. It is based on a lightweight Debian operating system, allocated 1024 MB of RAM and 1 CPU core, ensuring minimal resource usage while providing essential functionality. The container utilizes approximately 11.73 GB of disk space, providing ample storage for the application and its associated monitoring data. This setup demonstrates a lean and efficient approach to virtualization, leveraging LXC technology for efficient resource sharing.&lt;/p&gt;
+&lt;p&gt;Functionally, this container runs the Uptime Kuma application, a popular open-source tool designed for system monitoring. Its primary role in the homelab is to provide a centralized, visually accessible dashboard for tracking the status and availability of various services running on the network. By hosting this monitoring script, uptimekuma allows the user to easily observe the health of their infrastructure, making it crucial for proactive maintenance and ensuring the stability of the entire homelab setup.&lt;/p&gt;
+&lt;h2&gt;Resources&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;resources&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#resources&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;VMID:&lt;/strong&gt; 109&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Status:&lt;/strong&gt; running&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;IP:&lt;/strong&gt; dhcp&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;OS:&lt;/strong&gt; debian&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;RAM:&lt;/strong&gt; 1024 MB&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Disk:&lt;/strong&gt; 11.73 GB&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cores:&lt;/strong&gt; 1&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Node:&lt;/strong&gt; pve&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tags:&lt;/strong&gt; community-script, monitoring&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

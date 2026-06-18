@@ -1,0 +1,16 @@
+{{ define "main" }}
+<h1>Guests</h1>
+<table>
+<thead><tr><th>VMID</th><th>Name</th><th>Type</th><th>Status</th><th>CPU</th><th>RAM</th><th>Disk</th></tr></thead>
+<tbody>
+{{ range .Pages.ByParam "vmid" }}
+<tr>
+<td>{{ .Params.vmid }}</td>
+<td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
+<td><span class="badge {{ lower .Params.type }}">{{ .Params.type }}</span></td>
+<td><span class="badge {{ .Params.status }}">{{ .Params.status }}</span></td>
+<td>{{ .Params.cpu }}</td><td>{{ .Params.ram_gb }} GB</td><td>{{ .Params.disk_gb }} GB</td>
+</tr>
+{{ end }}
+</tbody></table>
+{{ end }}

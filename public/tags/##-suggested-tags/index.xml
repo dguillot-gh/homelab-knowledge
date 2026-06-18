@@ -1,0 +1,3286 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Homelab Documentation – ## Suggested Tags</title>
+    <link>http://192.168.0.56:1313/tags/%23%23-suggested-tags/</link>
+    <description>Recent content in ## Suggested Tags on Homelab Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	  <atom:link href="http://192.168.0.56:1313/tags/%23%23-suggested-tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>ansible</title>
+      <link>http://192.168.0.56:1313/docs/112-ansible/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.56:1313/docs/112-ansible/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;Status:&lt;/strong&gt; Running | &lt;strong&gt;VMID:&lt;/strong&gt; 112 | &lt;strong&gt;Type:&lt;/strong&gt; LXC&lt;/p&gt;
+&lt;h2&gt;At a Glance&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;at-a-glance&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#at-a-glance&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Property&lt;/th&gt;
+          &lt;th&gt;Value&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;VMID&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;112&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Type&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;LXC&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Status&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;running&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;CPU Cores&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;RAM&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;0.5 GB&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Disk&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;15.58 GB&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Auto Start&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Yes&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Tags&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;## Suggested Tags&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Ansible is an open-source automation tool used primarily for configuration management, application deployment, and orchestration across multiple servers. In a homelab environment, Ansible serves as a powerful central tool for defining, executing, and managing complex infrastructure tasks, allowing users to provision virtual machines, install necessary services, configure networking, and enforce consistent state across their various homelab projects.&lt;/p&gt;
+&lt;h2&gt;Purpose&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;purpose&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#purpose&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Ansible is essential in a homelab for automating repetitive infrastructure tasks, ensuring that configurations are applied consistently and idempotently across all virtual machines and services. It drastically reduces the time and effort required for setup, deployment, and maintenance of the homelab environment.&lt;/p&gt;
+&lt;h2&gt;Key Features&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;key-features&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#key-features&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Agentless architecture: It communicates over SSH, eliminating the need to install persistent agents on managed nodes.&lt;/li&gt;
+&lt;li&gt;YAML-based Playbooks: Uses human-readable YAML files to define desired states and automation workflows.&lt;/li&gt;
+&lt;li&gt;Idempotency: Ensures that running a playbook multiple times produces the same result without unintended changes, making deployments reliable.&lt;/li&gt;
+&lt;li&gt;Modularity: Allows the creation of reusable roles and collections for managing complex system components.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Operational Notes&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;operational-notes&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#operational-notes&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Always maintain an accurate and well-organized inventory file to define the scope of your managed systems.&lt;/li&gt;
+&lt;li&gt;Prioritize idempotent scripting; structure your playbooks so that they can be safely run repeatedly without fear of breaking existing configurations.&lt;/li&gt;
+&lt;li&gt;Implement strict access controls for your Ansible inventory and execution credentials to maintain the security of your homelab infrastructure.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Suggested Tags&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;suggested-tags&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#suggested-tags&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;automation, development, productivity, os, community-script&lt;/p&gt;
+&lt;h2&gt;Network&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;network&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#network&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Interface&lt;/th&gt;
+          &lt;th&gt;Config&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;net0&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;name=eth0,bridge=vmbr0,hwaddr=BC:24:11:9A:4B:27,ip=dhcp,ip6=auto,type=veth&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;Storage&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;storage&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#storage&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Device&lt;/th&gt;
+          &lt;th&gt;Config&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;rootfs&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;TGroup1:vm-112-disk-0,size=16G&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Add manual notes here.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>argus</title>
+      <link>http://192.168.0.56:1313/docs/120-argus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.56:1313/docs/120-argus/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;Status:&lt;/strong&gt; Running | &lt;strong&gt;VMID:&lt;/strong&gt; 120 | &lt;strong&gt;Type:&lt;/strong&gt; LXC&lt;/p&gt;
+&lt;h2&gt;At a Glance&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;at-a-glance&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#at-a-glance&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Property&lt;/th&gt;
+          &lt;th&gt;Value&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;VMID&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;120&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Type&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;LXC&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Status&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;running&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;CPU Cores&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;RAM&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;0.5 GB&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Disk&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;2.88 GB&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Auto Start&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Yes&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Tags&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;## Suggested Tags&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;argus is a lightweight container designed to run automated monitoring scripts and system watchers within a homelab environment. Its primary role is to provide centralized, passive observation of system states, file changes, and service health, helping to automate routine checks and trigger alerts for critical events across various services.&lt;/p&gt;
+&lt;h2&gt;Purpose&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;purpose&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#purpose&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Argus is useful in a homelab for automating routine system checks and providing real-time visibility into the operational health of containers and services. It simplifies complex monitoring tasks by centralizing event tracking, allowing the user to stay informed about system changes without constant manual intervention.&lt;/p&gt;
+&lt;h2&gt;Key Features&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;key-features&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#key-features&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Automated system watching for file changes and directory modifications.&lt;/li&gt;
+&lt;li&gt;Execution environment for community-developed monitoring scripts.&lt;/li&gt;
+&lt;li&gt;Lightweight resource usage (0.5 GB RAM) making it ideal for background services.&lt;/li&gt;
+&lt;li&gt;Centralized logging of detected events for easy review and auditing.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Operational Notes&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;operational-notes&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#operational-notes&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Ensure that the container has sufficient permissions (e.g., necessary watch privileges) to monitor all target directories to prevent missed events.&lt;/li&gt;
+&lt;li&gt;Regularly review the logs generated by argus to ensure scripts are executing correctly and that no unexpected errors are being reported.&lt;/li&gt;
+&lt;li&gt;Since argus is a watcher, ensure the underlying host system&amp;rsquo;s file system is mounted correctly and accessible for accurate monitoring.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Suggested Tags&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;suggested-tags&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#suggested-tags&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;monitoring
+automation
+development
+watcher
+community-script&lt;/p&gt;
+&lt;h2&gt;Network&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;network&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#network&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Interface&lt;/th&gt;
+          &lt;th&gt;Config&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;net0&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;name=eth0,bridge=vmbr0,hwaddr=BC:24:11:F4:07:48,ip=dhcp,type=veth&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;Storage&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;storage&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#storage&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Device&lt;/th&gt;
+          &lt;th&gt;Config&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;rootfs&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;TGroup1:vm-120-disk-0,size=3G&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Add manual notes here.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>audiobookshelf</title>
+      <link>http://192.168.0.56:1313/docs/121-audiobookshelf/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.56:1313/docs/121-audiobookshelf/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;Status:&lt;/strong&gt; Running | &lt;strong&gt;VMID:&lt;/strong&gt; 121 | &lt;strong&gt;Type:&lt;/strong&gt; LXC&lt;/p&gt;
+&lt;h2&gt;At a Glance&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;at-a-glance&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#at-a-glance&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Property&lt;/th&gt;
+          &lt;th&gt;Value&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;VMID&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;121&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Type&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;LXC&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Status&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;running&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;CPU Cores&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;2&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;RAM&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;2.0 GB&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Disk&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;4.84 GB&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Auto Start&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Yes&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Tags&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;## Suggested Tags&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;This container runs Audiobookshelf, a powerful media server designed to organize, manage, and stream personal audio content. In a homelab environment, it serves as a dedicated media repository and streaming service, centralizing large personal audio libraries and providing easy, accessible access across various devices within the network.&lt;/p&gt;
+&lt;h2&gt;Purpose&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;purpose&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#purpose&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Audiobookshelf’s primary role in a homelab is to establish a centralized, self-hosted media management solution, eliminating reliance on external, subscription-based services. It allows the user to control and organize their entire audio collection directly on their home network, enhancing privacy and control over personal media consumption.&lt;/p&gt;
+&lt;h2&gt;Key Features&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;key-features&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#key-features&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Centralized Library Management:&lt;/strong&gt; Organizes local audio files into a cohesive, searchable library.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Multi-Device Streaming:&lt;/strong&gt; Allows seamless playback of audio content across various devices via web interfaces and mobile apps.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Metadata Management:&lt;/strong&gt; Automatically pulls and displays rich metadata (covers, titles, artists) for enhanced browsing.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Local File Hosting:&lt;/strong&gt; Stores all media locally, ensuring data sovereignty and offline access.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Operational Notes&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;operational-notes&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#operational-notes&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Storage Configuration:&lt;/strong&gt; Ensure the underlying storage volume is configured with sufficient space and is appropriately mounted to avoid resource contention.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Regular Backups:&lt;/strong&gt; Since this holds important media, implement a regular backup schedule for the configuration and the actual media files to safeguard against data loss.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;File Structure:&lt;/strong&gt; Organize audio files within the designated volume following clear naming conventions to facilitate future organization and automation.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Suggested Tags&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;suggested-tags&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#suggested-tags&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;media
+storage
+productivity
+automation
+audiobookshelf&lt;/p&gt;
+&lt;h2&gt;Network&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;network&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#network&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Interface&lt;/th&gt;
+          &lt;th&gt;Config&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;net0&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;name=eth0,bridge=vmbr0,hwaddr=BC:24:11:84:99:59,ip=dhcp,type=veth&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;Storage&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;storage&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#storage&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Device&lt;/th&gt;
+          &lt;th&gt;Config&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;mp0&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;/mnt/data/,mp=/data&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;rootfs&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;TGroup1:vm-121-disk-0,size=5G&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Add manual notes here.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>caddy</title>
+      <link>http://192.168.0.56:1313/docs/118-caddy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.56:1313/docs/118-caddy/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;Status:&lt;/strong&gt; Running | &lt;strong&gt;VMID:&lt;/strong&gt; 118 | &lt;strong&gt;Type:&lt;/strong&gt; LXC&lt;/p&gt;
+&lt;h2&gt;At a Glance&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;at-a-glance&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#at-a-glance&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Property&lt;/th&gt;
+          &lt;th&gt;Value&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;VMID&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;118&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Type&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;LXC&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Status&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;running&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;CPU Cores&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;RAM&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;0.5 GB&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Disk&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;19.52 GB&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Auto Start&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Yes&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Tags&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;## Suggested Tags&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Caddy is a modern, open-source web server that emphasizes simplicity and automatic security management, making it an excellent choice for managing services within a homelab environment. It functions primarily as a reverse proxy, handling incoming web traffic and automatically managing TLS/SSL certificates using protocols like Let&amp;rsquo;s Encrypt. In a homelab context, Caddy serves as a centralized entry point, allowing you to easily expose internal services securely to the outside world while ensuring all traffic is encrypted.&lt;/p&gt;
+&lt;h2&gt;Purpose&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;purpose&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#purpose&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Caddy’s main purpose in a homelab is to provide a robust, automated, and secure front-end for internal services. It simplifies the complex task of setting up HTTPS and reverse proxying, allowing users to focus on deploying applications rather than managing complex security certificates.&lt;/p&gt;
+&lt;h2&gt;Key Features&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;key-features&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#key-features&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Automatic HTTPS/TLS: Caddy automatically provisions and renews SSL certificates, eliminating manual certificate management.&lt;/li&gt;
+&lt;li&gt;Reverse Proxying: It efficiently routes incoming web requests to the correct internal services running on other containers or VMs.&lt;/li&gt;
+&lt;li&gt;Simple Configuration: It uses a clean, easy-to-read configuration file that facilitates quick setup and maintenance.&lt;/li&gt;
+&lt;li&gt;HTTP/2 Support: Caddy natively supports modern HTTP protocols, ensuring high-performance and secure communication.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Operational Notes&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;operational-notes&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#operational-notes&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Ensure proper port mapping in your configuration file to allow external access to the services you are proxying.&lt;/li&gt;
+&lt;li&gt;Since Caddy manages TLS, monitor its logs closely for any certificate errors or failed connection attempts, as these often indicate network or service issues.&lt;/li&gt;
+&lt;li&gt;Leverage its ability to handle multiple sites and subdomains from a single configuration to streamline your overall network setup.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Suggested Tags&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;suggested-tags&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#suggested-tags&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;reverse-proxy
+webserver
+networking
+security
+automation
+reverse-proxy&lt;/p&gt;
+&lt;h2&gt;Network&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;network&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#network&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Interface&lt;/th&gt;
+          &lt;th&gt;Config&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;net0&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;name=eth0,bridge=vmbr0,hwaddr=BC:24:11:3C:3D:F6,ip=dhcp,ip6=auto,type=veth&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;Storage&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;storage&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#storage&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Device&lt;/th&gt;
+          &lt;th&gt;Config&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;rootfs&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;TGroup1:vm-118-disk-0,size=20G&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Add manual notes here.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>databasus</title>
+      <link>http://192.168.0.56:1313/docs/116-databasus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.56:1313/docs/116-databasus/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;Status:&lt;/strong&gt; Running | &lt;strong&gt;VMID:&lt;/strong&gt; 116 | &lt;strong&gt;Type:&lt;/strong&gt; LXC&lt;/p&gt;
+&lt;h2&gt;At a Glance&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;at-a-glance&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#at-a-glance&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Property&lt;/th&gt;
+          &lt;th&gt;Value&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;VMID&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;116&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Type&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;LXC&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Status&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;running&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;CPU Cores&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;2&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;RAM&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;2.0 GB&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Disk&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;7.78 GB&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Auto Start&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Yes&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Tags&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;## Suggested Tags&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;This documentation describes the &lt;code&gt;databasus&lt;/code&gt; container/VM, a dedicated environment for running a PostgreSQL database instance within the homelab. It serves as a persistent, isolated location for storing critical application data, enabling the deployment and management of various services that require robust relational data management.&lt;/p&gt;
+&lt;h2&gt;Purpose&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;purpose&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#purpose&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;This instance provides a reliable and isolated environment for hosting a PostgreSQL database. It is essential in a homelab for practicing database administration, learning data persistence, and serving as the backend for various home automation or development projects.&lt;/p&gt;
+&lt;h2&gt;Key Features&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;key-features&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#key-features&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;PostgreSQL Database:&lt;/strong&gt; Provides a robust, open-source relational database system for data storage and management.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Data Persistence:&lt;/strong&gt; Ensures that all stored data remains intact and accessible, regardless of container lifecycle.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Resource Efficiency:&lt;/strong&gt; Runs efficiently within a lightweight LXC container environment, optimizing resource usage on the host machine.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Application Backend:&lt;/strong&gt; Serves as a foundational data store for connecting external services and applications deployed in the homelab.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Operational Notes&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;operational-notes&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#operational-notes&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Regular Backups are Mandatory:&lt;/strong&gt; Since this holds critical data, configure an automated backup routine immediately to ensure data safety against hardware failure or accidental deletion.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Monitor Resource Usage:&lt;/strong&gt; Keep an eye on CPU and RAM consumption, especially during peak usage times, to ensure the database remains responsive and does not impact other homelab services.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Secure Access:&lt;/strong&gt; Implement strong access controls (e.g., using SSL/TLS and restricted network access) to protect the sensitive data stored within the database.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Suggested Tags&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;suggested-tags&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#suggested-tags&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;database, backup, storage, development, community-script&lt;/p&gt;
+&lt;h2&gt;Network&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;network&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#network&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Interface&lt;/th&gt;
+          &lt;th&gt;Config&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;net0&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;name=eth0,bridge=vmbr0,hwaddr=BC:24:11:0E:70:76,ip=dhcp,type=veth&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;Storage&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;storage&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#storage&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Device&lt;/th&gt;
+          &lt;th&gt;Config&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;rootfs&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;TGroup1:vm-116-disk-0,size=8G&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Add manual notes here.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>docker</title>
+      <link>http://192.168.0.56:1313/docs/119-docker/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.56:1313/docs/119-docker/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;Status:&lt;/strong&gt; Running | &lt;strong&gt;VMID:&lt;/strong&gt; 119 | &lt;strong&gt;Type:&lt;/strong&gt; LXC&lt;/p&gt;
+&lt;h2&gt;At a Glance&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;at-a-glance&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#at-a-glance&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Property&lt;/th&gt;
+          &lt;th&gt;Value&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;VMID&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;119&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Type&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;LXC&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Status&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;running&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;CPU Cores&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;3&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;RAM&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;4.0 GB&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Disk&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;136.74 GB&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Auto Start&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Yes&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Tags&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;## Suggested Tags&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Docker is a platform that allows users to package applications and their dependencies into isolated, portable containers. In a homelab environment, Docker serves as the foundational layer for deploying services, testing new software stacks, and practicing modern DevOps methodologies without cluttering the host operating system. It provides a standardized, reproducible way to manage complex software environments and streamline the deployment of various services.&lt;/p&gt;
+&lt;h2&gt;Purpose&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;purpose&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#purpose&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;This Docker environment provides a standardized, isolated environment for running various services, tools, and development projects. It allows users to experiment with containerization, manage dependencies easily, and ensure that projects run consistently regardless of the host machine configuration. It is essential for building a functional, self-contained homelab infrastructure.&lt;/p&gt;
+&lt;h2&gt;Key Features&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;key-features&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#key-features&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Isolation:&lt;/strong&gt; Containers provide strict isolation, ensuring that applications run independently of the host system and other containers, preventing conflicts.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Portability:&lt;/strong&gt; Applications packaged in Docker containers can be moved easily between different environments, making deployment and migration simple.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Efficiency:&lt;/strong&gt; Docker leverages operating system virtualization to allow multiple services to run efficiently on a single machine, optimizing resource utilization (CPU and RAM).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Reproducibility:&lt;/strong&gt; Using Dockerfiles ensures that the exact runtime environment is captured, making setups easily reproducible for documentation and collaboration.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Operational Notes&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;operational-notes&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#operational-notes&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Image Management:&lt;/strong&gt; Always maintain a clear record of your Docker images and use versioned tags. Avoid running containers using only random commands; use proper image pull and build processes.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Resource Monitoring:&lt;/strong&gt; Regularly check the resource usage (CPU and RAM) of your containers to identify bottlenecks and ensure your resource allocations are appropriate for the workload.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Networking Setup:&lt;/strong&gt; Leverage Docker networking to manage internal service communication effectively. Use Docker networks to segment your services and control how they interact within the homelab.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Suggested Tags&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;suggested-tags&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#suggested-tags&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;docker
+development
+automation
+networking
+security&lt;/p&gt;
+&lt;h2&gt;Network&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;network&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#network&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Interface&lt;/th&gt;
+          &lt;th&gt;Config&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;net0&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;name=eth0,bridge=vmbr0,hwaddr=BC:24:11:CC:95:14,ip=dhcp,type=veth&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;Storage&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;storage&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#storage&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Device&lt;/th&gt;
+          &lt;th&gt;Config&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;rootfs&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;TGroup1:vm-119-disk-0,size=140G&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Add manual notes here.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>dockerservices</title>
+      <link>http://192.168.0.56:1313/docs/110-dockerservices/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.56:1313/docs/110-dockerservices/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;Status:&lt;/strong&gt; Stopped | &lt;strong&gt;VMID:&lt;/strong&gt; 110 | &lt;strong&gt;Type:&lt;/strong&gt; QEMU&lt;/p&gt;
+&lt;h2&gt;At a Glance&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;at-a-glance&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#at-a-glance&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Property&lt;/th&gt;
+          &lt;th&gt;Value&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;VMID&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;110&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Type&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;QEMU&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Status&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;stopped&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;CPU Cores&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;2&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;RAM&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;6.0 GB&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Disk&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;120.0 GB&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Auto Start&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;No&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Tags&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;## Suggested Tags&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;DockerServices is a dedicated virtual machine environment designed to host and manage containerized applications. In a homelab context, this service acts as the core platform for deploying, isolating, and orchestrating various services, allowing the user to run complex applications efficiently and manage resource consumption across the physical hardware.&lt;/p&gt;
+&lt;h2&gt;Purpose&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;purpose&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#purpose&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;This environment provides a standardized, reproducible platform for running microservices and development tools. It allows the homelabber to test complex infrastructure setups, experiment with different application stacks, and maintain isolated environments without impacting the host operating system.&lt;/p&gt;
+&lt;h2&gt;Key Features&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;key-features&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#key-features&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Container Isolation: Ensures that different services operate in isolated environments, preventing conflicts between applications.&lt;/li&gt;
+&lt;li&gt;Portability: Allows services to be easily moved, deployed, and replicated across different physical machines.&lt;/li&gt;
+&lt;li&gt;Resource Efficiency: Enables granular control over CPU and RAM allocation for each running container.&lt;/li&gt;
+&lt;li&gt;Simplified Deployment: Streamlines the process of deploying complex applications using standardized Docker images.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Operational Notes&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;operational-notes&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#operational-notes&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Always ensure the Docker services are running and properly configured before attempting to deploy new containers.&lt;/li&gt;
+&lt;li&gt;Regularly monitor container resource usage to identify potential bottlenecks and optimize resource allocation across the VM.&lt;/li&gt;
+&lt;li&gt;Implement a robust backup strategy for the container image data and configuration files to ensure data integrity.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Suggested Tags&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;suggested-tags&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#suggested-tags&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;docker
+networking
+development
+automation
+security
+storage&lt;/p&gt;
+&lt;h2&gt;Network&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;network&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#network&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Interface&lt;/th&gt;
+          &lt;th&gt;Config&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;net0&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;virtio=BC:24:11:26:3A:07,bridge=vmbr0,firewall=1&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;Storage&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;storage&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#storage&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Device&lt;/th&gt;
+          &lt;th&gt;Config&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;scsi0&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;TGroup1:vm-110-disk-0,iothread=1,size=120G&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Add manual notes here.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>flaresolverr</title>
+      <link>http://192.168.0.56:1313/docs/105-flaresolverr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.56:1313/docs/105-flaresolverr/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;Status:&lt;/strong&gt; Running | &lt;strong&gt;VMID:&lt;/strong&gt; 105 | &lt;strong&gt;Type:&lt;/strong&gt; LXC&lt;/p&gt;
+&lt;h2&gt;At a Glance&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;at-a-glance&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#at-a-glance&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Property&lt;/th&gt;
+          &lt;th&gt;Value&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;VMID&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;105&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Type&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;LXC&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Status&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;running&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;CPU Cores&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;RAM&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;0.5 GB&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Disk&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;3.86 GB&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Auto Start&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Yes&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Tags&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;## Suggested Tags&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;flaresolverr is a specialized LXC container designed to host community-developed scripts and tools focused on media management automation. In a homelab environment, it serves as a centralized hub for automating the organization, downloading, and management of digital media files, greatly reducing manual effort in content curation.&lt;/p&gt;
+&lt;h2&gt;Purpose&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;purpose&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#purpose&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;This container provides a dedicated, lightweight environment for running complex automation scripts essential for managing media libraries. It allows the homelab user to implement a scalable, automated workflow for media acquisition and organization without cluttering the host system.&lt;/p&gt;
+&lt;h2&gt;Key Features&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;key-features&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#key-features&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Centralized automation hub for media file management.&lt;/li&gt;
+&lt;li&gt;Utilizes community-developed scripts for efficient sorting and organization.&lt;/li&gt;
+&lt;li&gt;Operates efficiently within a lightweight LXC container environment.&lt;/li&gt;
+&lt;li&gt;Facilitates the seamless integration of media acquisition tasks.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Operational Notes&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;operational-notes&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#operational-notes&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Monitor resource usage closely, especially CPU and RAM, as automation tasks can spike during processing.&lt;/li&gt;
+&lt;li&gt;Implement regular backups of the container&amp;rsquo;s configuration and any downloaded media to ensure data integrity.&lt;/li&gt;
+&lt;li&gt;Keep the container&amp;rsquo;s dependencies updated regularly to maintain compatibility with evolving community scripts.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Suggested Tags&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;suggested-tags&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#suggested-tags&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;arr-stack
+automation
+development
+media
+reverse-proxy&lt;/p&gt;
+&lt;h2&gt;Network&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;network&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#network&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Interface&lt;/th&gt;
+          &lt;th&gt;Config&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;net0&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;name=eth0,bridge=vmbr0,hwaddr=BC:24:11:74:17:A9,ip=dhcp,type=veth&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;Storage&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;storage&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#storage&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Device&lt;/th&gt;
+          &lt;th&gt;Config&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;rootfs&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;TGroup1:vm-105-disk-0,size=4G&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Add manual notes here.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>gitea</title>
+      <link>http://192.168.0.56:1313/docs/103-gitea/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.56:1313/docs/103-gitea/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;Status:&lt;/strong&gt; Running | &lt;strong&gt;VMID:&lt;/strong&gt; 103 | &lt;strong&gt;Type:&lt;/strong&gt; LXC&lt;/p&gt;
+&lt;h2&gt;At a Glance&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;at-a-glance&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#at-a-glance&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Property&lt;/th&gt;
+          &lt;th&gt;Value&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;VMID&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;103&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Type&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;LXC&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Status&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;running&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;CPU Cores&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;RAM&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;1.0 GB&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Disk&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;7.78 GB&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Auto Start&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Yes&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Tags&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;## Suggested Tags&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;gitea is a self-hosted, open-source Git service that functions as a complete platform for version control, issue tracking, and project management. In a homelab environment, gitea serves as a crucial tool for centralizing the management of personal projects, scripts, and configurations, providing a private, self-controlled alternative to commercial platforms like GitHub or GitLab.&lt;/p&gt;
+&lt;h2&gt;Purpose&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;purpose&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#purpose&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;gitea provides a robust platform for self-managing development workflows and version control within the homelab. It allows users to host their private repositories and manage project progress entirely on local infrastructure, fostering a sense of control and security over sensitive data.&lt;/p&gt;
+&lt;h2&gt;Key Features&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;key-features&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#key-features&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Self-hosted Git repository management for tracking code changes and project history.&lt;/li&gt;
+&lt;li&gt;Integrated issue tracking and project board functionality for managing tasks and collaborations.&lt;/li&gt;
+&lt;li&gt;Simple, clean web interface for easy access and management of repositories and user accounts.&lt;/li&gt;
+&lt;li&gt;Support for workflow automation via hooks and scripting integration.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Operational Notes&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;operational-notes&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#operational-notes&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Due to its lightweight nature, monitor the 1.0 GB RAM usage; ensure adequate resources are available for other services running on the same host.&lt;/li&gt;
+&lt;li&gt;Implement regular backups of the repository data and configuration files to protect against data loss.&lt;/li&gt;
+&lt;li&gt;Leverage the community-script tags to integrate gitea with other homelab automation tools for advanced workflow management.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Suggested Tags&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;suggested-tags&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#suggested-tags&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;development, productivity, automation, git, community-script&lt;/p&gt;
+&lt;h2&gt;Network&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;network&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#network&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Interface&lt;/th&gt;
+          &lt;th&gt;Config&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;net0&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;name=eth0,bridge=vmbr0,hwaddr=BC:24:11:FA:B0:E8,ip=dhcp,type=veth&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;Storage&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;storage&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#storage&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Device&lt;/th&gt;
+          &lt;th&gt;Config&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;rootfs&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;TGroup1:vm-103-disk-0,size=8G&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Add manual notes here.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>gitea-mirror</title>
+      <link>http://192.168.0.56:1313/docs/107-gitea-mirror/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.56:1313/docs/107-gitea-mirror/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;Status:&lt;/strong&gt; Running | &lt;strong&gt;VMID:&lt;/strong&gt; 107 | &lt;strong&gt;Type:&lt;/strong&gt; LXC&lt;/p&gt;
+&lt;h2&gt;At a Glance&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;at-a-glance&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#at-a-glance&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Property&lt;/th&gt;
+          &lt;th&gt;Value&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;VMID&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;107&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Type&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;LXC&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Status&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;running&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;CPU Cores&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;2&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;RAM&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;2.0 GB&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Disk&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;5.82 GB&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Auto Start&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Yes&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Tags&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;## Suggested Tags&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;gitea-mirror is a self-hosted synchronization service designed to mirror remote Git repositories, making external code management fully accessible and controlled within the homelab environment. It acts as a local hub, pulling and storing remote repositories so that developers and collaborators can access essential code resources quickly and securely without relying on external hosting services.&lt;/p&gt;
+&lt;h2&gt;Purpose&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;purpose&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#purpose&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;This container serves as a local, resilient backup and synchronization system for essential code repositories. It eliminates external dependencies by providing local access to code, ensuring that critical development assets remain available regardless of external service status.&lt;/p&gt;
+&lt;h2&gt;Key Features&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;key-features&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#key-features&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Repository Mirroring:&lt;/strong&gt; Efficiently mirrors remote Git repositories to local storage.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Self-Hosted Access:&lt;/strong&gt; Provides a fully controlled, local interface for accessing and managing code.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Synchronization:&lt;/strong&gt; Ensures that local copies of repositories are up-to-date with remote sources.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Resource Efficiency:&lt;/strong&gt; Runs efficiently within an LXC container environment, optimizing resource usage.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Operational Notes&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;operational-notes&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#operational-notes&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Always ensure sufficient disk space on the host volume, as mirroring large repositories will consume significant storage.&lt;/li&gt;
+&lt;li&gt;Schedule regular backups of the mirrored data to a separate, long-term storage solution to prevent data loss.&lt;/li&gt;
+&lt;li&gt;Monitor CPU and RAM usage periodically to ensure the mirroring process remains stable and does not introduce performance bottlenecks.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Suggested Tags&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;suggested-tags&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#suggested-tags&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;development, productivity, storage, automation, backup&lt;/p&gt;
+&lt;h2&gt;Network&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;network&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#network&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Interface&lt;/th&gt;
+          &lt;th&gt;Config&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;net0&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;name=eth0,bridge=vmbr0,hwaddr=BC:24:11:CC:D4:E0,ip=dhcp,type=veth&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;Storage&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;storage&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#storage&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Device&lt;/th&gt;
+          &lt;th&gt;Config&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;rootfs&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;TGroup1:vm-107-disk-0,size=6G&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Add manual notes here.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>homelable</title>
+      <link>http://192.168.0.56:1313/docs/113-homelable/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.56:1313/docs/113-homelable/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;Status:&lt;/strong&gt; Running | &lt;strong&gt;VMID:&lt;/strong&gt; 113 | &lt;strong&gt;Type:&lt;/strong&gt; LXC&lt;/p&gt;
+&lt;h2&gt;At a Glance&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;at-a-glance&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#at-a-glance&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Property&lt;/th&gt;
+          &lt;th&gt;Value&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;VMID&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;113&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Type&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;LXC&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Status&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;running&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;CPU Cores&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;2&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;RAM&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;2.0 GB&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Disk&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;7.78 GB&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Auto Start&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Yes&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Tags&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;## Suggested Tags&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;homelable is a dedicated LXC container designed to serve as a central hub for various essential homelab services, focusing heavily on networking, monitoring, and data visualization. It acts as a foundational platform for deploying custom community scripts and lightweight services necessary to manage and automate the operation of the home lab environment.&lt;/p&gt;
+&lt;h2&gt;Purpose&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;purpose&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#purpose&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;This container is useful for centralizing critical infrastructure tasks, allowing users to deploy essential monitoring tools and network services efficiently. It serves as an ideal starting point for managing data streams and providing visual oversight of the entire homelab setup.&lt;/p&gt;
+&lt;h2&gt;Key Features&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;key-features&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#key-features&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Lightweight LXC container optimized for resource efficiency.&lt;/li&gt;
+&lt;li&gt;Centralized point for deploying community scripts and automation tools.&lt;/li&gt;
+&lt;li&gt;Integrated services for network management and real-time system monitoring.&lt;/li&gt;
+&lt;li&gt;Provides visualization capabilities for tracking homelab performance and data flow.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Operational Notes&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;operational-notes&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#operational-notes&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Ensure adequate network configuration is set up prior to deploying network services, as this container is heavily focused on networking.&lt;/li&gt;
+&lt;li&gt;Regularly review the monitoring dashboard to ensure all deployed scripts and services are running optimally and reporting correctly.&lt;/li&gt;
+&lt;li&gt;Given its role in data handling, implement scheduled backups for any persistent data generated within the container.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Suggested Tags&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;suggested-tags&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#suggested-tags&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;monitoring, networking, visualization, automation, community-script&lt;/p&gt;
+&lt;h2&gt;Network&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;network&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#network&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Interface&lt;/th&gt;
+          &lt;th&gt;Config&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;net0&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;name=eth0,bridge=vmbr0,hwaddr=BC:24:11:3E:96:2F,ip=dhcp,type=veth&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;Storage&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;storage&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#storage&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Device&lt;/th&gt;
+          &lt;th&gt;Config&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;rootfs&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;TGroup1:vm-113-disk-0,size=8G&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Add manual notes here.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>hugo-docs</title>
+      <link>http://192.168.0.56:1313/docs/128-hugo-docs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.56:1313/docs/128-hugo-docs/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;Status:&lt;/strong&gt; Running | &lt;strong&gt;VMID:&lt;/strong&gt; 128 | &lt;strong&gt;Type:&lt;/strong&gt; LXC&lt;/p&gt;
+&lt;h2&gt;At a Glance&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;at-a-glance&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#at-a-glance&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Property&lt;/th&gt;
+          &lt;th&gt;Value&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;VMID&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;128&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Type&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;LXC&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Status&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;running&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;CPU Cores&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;RAM&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;1.02 GB&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Disk&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;19.52 GB&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Auto Start&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Yes&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Tags&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;## Suggested Tags&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;hugo-docs is a lightweight container designed to serve as a centralized hub for storing, organizing, and managing crucial homelab documentation, automation scripts, and configuration knowledge. Its primary role in a homelab is to centralize the operational knowledge, making complex setups reproducible, easily searchable, and maintainable across various services.&lt;/p&gt;
+&lt;h2&gt;Purpose&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;purpose&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#purpose&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;This container serves as the central knowledge base for all homelab projects and operational procedures. It allows you to store complex automation scripts and system configurations in an accessible, version-controlled manner, significantly reducing the time spent searching for setup details. It ensures that critical operational knowledge is stored persistently and is easy to reference for future troubleshooting and scaling efforts.&lt;/p&gt;
+&lt;h2&gt;Key Features&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;key-features&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#key-features&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Centralized Knowledge Base: Stores all configuration files, READMEs, and operational guides in a single, accessible location.&lt;/li&gt;
+&lt;li&gt;Automation Storage: Provides a dedicated space for housing custom shell scripts and configuration snippets used for system automation.&lt;/li&gt;
+&lt;li&gt;Version Control Ready: Facilitates the organized storage of documentation, making it easy to track changes and maintain history.&lt;/li&gt;
+&lt;li&gt;Lightweight Deployment: Operates efficiently as an LXC container, minimizing resource usage while maximizing storage utility.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Operational Notes&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;operational-notes&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#operational-notes&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Regular Backup: Since this container holds critical knowledge, ensure that its data is regularly backed up to an external storage location to prevent loss.&lt;/li&gt;
+&lt;li&gt;Script Hygiene: Always review and update stored automation scripts after making system changes to ensure they remain accurate and functional.&lt;/li&gt;
+&lt;li&gt;Access Control: Implement appropriate access controls (e.g., permissions) if other services require access to the stored documentation or scripts.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Suggested Tags&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;suggested-tags&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#suggested-tags&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;development
+automation
+productivity
+storage
+community-script&lt;/p&gt;
+&lt;h2&gt;Network&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;network&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#network&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Interface&lt;/th&gt;
+          &lt;th&gt;Config&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;net0&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;name=eth0,bridge=vmbr0,hwaddr=BC:24:11:55:2C:39,ip=dhcp,ip6=dhcp,type=veth&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;Storage&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;storage&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#storage&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Device&lt;/th&gt;
+          &lt;th&gt;Config&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;rootfs&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;TGroup1:vm-128-disk-0,size=20G&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Add manual notes here.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>ironclaw</title>
+      <link>http://192.168.0.56:1313/docs/115-ironclaw/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.56:1313/docs/115-ironclaw/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;Status:&lt;/strong&gt; Running | &lt;strong&gt;VMID:&lt;/strong&gt; 115 | &lt;strong&gt;Type:&lt;/strong&gt; LXC&lt;/p&gt;
+&lt;h2&gt;At a Glance&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;at-a-glance&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#at-a-glance&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Property&lt;/th&gt;
+          &lt;th&gt;Value&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;VMID&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;115&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Type&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;LXC&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Status&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;running&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;CPU Cores&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;2&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;RAM&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;2.0 GB&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Disk&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;7.78 GB&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Auto Start&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Yes&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Tags&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;## Suggested Tags&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;ironclaw is a specialized container environment designed to serve as a central hub for automation, security monitoring, and AI-driven community scripts within a personal homelab. It acts as an agile platform for running essential services that manage infrastructure tasks, enhance overall system security, and facilitate complex, custom scripting projects.&lt;/p&gt;
+&lt;h2&gt;Purpose&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;purpose&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#purpose&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;ironclaw is primarily useful for consolidating specialized security tools, automation scripts, and AI agents into a single, manageable environment. It allows the homelabber to centralize complex tasks, improve operational efficiency, and experiment with cutting-edge community-developed solutions.&lt;/p&gt;
+&lt;h2&gt;Key Features&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;key-features&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#key-features&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Runs as an LXC container, offering lightweight resource consumption and easy management.&lt;/li&gt;
+&lt;li&gt;Dedicated environment for hosting security agents and monitoring tools.&lt;/li&gt;
+&lt;li&gt;Platform for executing community-developed AI and automation scripts.&lt;/li&gt;
+&lt;li&gt;Optimized setup for running specialized agent services.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Operational Notes&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;operational-notes&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#operational-notes&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Regularly review the container logs to ensure all security agents and automation scripts are running without errors.&lt;/li&gt;
+&lt;li&gt;Ensure the container is regularly updated to benefit from the latest community scripts and security patches.&lt;/li&gt;
+&lt;li&gt;Since this is an agent-based system, verify network connectivity to ensure communication with other homelab services is functioning correctly.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Suggested Tags&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;suggested-tags&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#suggested-tags&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;security
+automation
+agent
+ai
+community-script&lt;/p&gt;
+&lt;h2&gt;Network&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;network&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#network&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Interface&lt;/th&gt;
+          &lt;th&gt;Config&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;net0&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;name=eth0,bridge=vmbr0,hwaddr=BC:24:11:F0:C2:92,ip=dhcp,type=veth&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;Storage&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;storage&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#storage&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Device&lt;/th&gt;
+          &lt;th&gt;Config&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;rootfs&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;TGroup1:vm-115-disk-0,size=8G&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Add manual notes here.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>jellyfin</title>
+      <link>http://192.168.0.56:1313/docs/100-jellyfin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.56:1313/docs/100-jellyfin/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;Status:&lt;/strong&gt; Running | &lt;strong&gt;VMID:&lt;/strong&gt; 100 | &lt;strong&gt;Type:&lt;/strong&gt; LXC&lt;/p&gt;
+&lt;h2&gt;At a Glance&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;at-a-glance&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#at-a-glance&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Property&lt;/th&gt;
+          &lt;th&gt;Value&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;VMID&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;100&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Type&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;LXC&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Status&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;running&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;CPU Cores&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;2&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;RAM&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;3.0 GB&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Disk&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;78.19 GB&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Auto Start&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Yes&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Tags&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;## Suggested Tags&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Jellyfin is an open-source, free, and open-source media server that allows users to organize, store, and stream their multimedia collections (movies, TV shows, music, photos) directly to devices across any platform. In a homelab environment, it serves as a centralized hub for managing personal media, allowing users to take control of their content delivery, avoid reliance on commercial streaming services, and practice self-hosting by managing media infrastructure entirely within their own network.&lt;/p&gt;
+&lt;h2&gt;Purpose&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;purpose&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#purpose&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Jellyfin provides a centralized platform for managing and streaming personal media files, eliminating the need for external streaming services. It allows the homelab owner to control the entire media experience, including library management and quality control, ensuring media is accessible securely within the private network.&lt;/p&gt;
+&lt;h2&gt;Key Features&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;key-features&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#key-features&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Universal Streaming:&lt;/strong&gt; Supports various streaming protocols (Plex, Emby, Web), allowing access to media from smart TVs, mobile devices, and web browsers.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Media Management:&lt;/strong&gt; Offers a robust interface for organizing, tagging, and cataloging media libraries.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hardware Transcoding:&lt;/strong&gt; Utilizes CPU resources to automatically transcode video streams in real-time, ensuring media is playable regardless of the client device&amp;rsquo;s format.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Self-Hosted Control:&lt;/strong&gt; Provides complete control over the media server, storage, and access permissions, keeping data private within the homelab.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Operational Notes&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;operational-notes&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#operational-notes&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Ensure sufficient CPU resources are allocated to the VM to handle heavy transcoding tasks smoothly, especially when multiple streams are active simultaneously.&lt;/li&gt;
+&lt;li&gt;Mount the media storage volume (disk) directly into the container for optimal performance and easy access to the media files.&lt;/li&gt;
+&lt;li&gt;Implement regular backup procedures for the media library and server configuration to protect against data loss.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Suggested Tags&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;suggested-tags&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#suggested-tags&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;media
+storage
+backup
+networking
+automation&lt;/p&gt;
+&lt;h2&gt;Network&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;network&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#network&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Interface&lt;/th&gt;
+          &lt;th&gt;Config&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;net0&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;name=eth0,bridge=vmbr0,hwaddr=BC:24:11:60:8F:89,ip=dhcp,type=veth&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;Storage&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;storage&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#storage&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Device&lt;/th&gt;
+          &lt;th&gt;Config&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;mp0&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;/mnt/data/,mp=/data&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;rootfs&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;TGroup1:vm-100-disk-0,size=80G&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Add manual notes here.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>jellyseerr</title>
+      <link>http://192.168.0.56:1313/docs/108-jellyseerr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.56:1313/docs/108-jellyseerr/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;Status:&lt;/strong&gt; Running | &lt;strong&gt;VMID:&lt;/strong&gt; 108 | &lt;strong&gt;Type:&lt;/strong&gt; LXC&lt;/p&gt;
+&lt;h2&gt;At a Glance&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;at-a-glance&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#at-a-glance&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Property&lt;/th&gt;
+          &lt;th&gt;Value&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;VMID&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;108&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Type&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;LXC&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Status&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;running&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;CPU Cores&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;2&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;RAM&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;2.0 GB&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Disk&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;31.2 GB&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Auto Start&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Yes&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Tags&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;## Suggested Tags&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;jellyseerr is a centralized media server application designed to organize, manage, and provide easy access to media libraries across various devices within a homelab environment. It plays a crucial role in automating the discovery and organization of movies, TV shows, music, and photos, acting as a single pane of glass for managing personal media collections. In a homelab context, it centralizes media access, reducing the complexity of managing multiple disparate media servers and ensuring seamless streaming experiences for all users.&lt;/p&gt;
+&lt;h2&gt;Purpose&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;purpose&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#purpose&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Jellyseerr serves to consolidate all media assets into a single, searchable interface, eliminating the need to manage multiple separate media applications. Its primary goal is to provide an easy-to-use platform for organizing and streaming personal media collections efficiently.&lt;/p&gt;
+&lt;h2&gt;Key Features&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;key-features&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#key-features&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Centralized Media Discovery: Automatically scans configured locations for media files (movies, music, photos).&lt;/li&gt;
+&lt;li&gt;Unified Interface: Provides a single, intuitive web interface for browsing and managing the entire media library.&lt;/li&gt;
+&lt;li&gt;Device Integration: Supports integration with various streaming clients and smart TVs for seamless viewing.&lt;/li&gt;
+&lt;li&gt;Metadata Management: Allows for the management and display of rich metadata (posters, descriptions, cast) for all collected media.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Operational Notes&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;operational-notes&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#operational-notes&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Regular Scanning: Schedule periodic scans of your media directories to ensure new files are detected and the library remains up-to-date.&lt;/li&gt;
+&lt;li&gt;Resource Monitoring: Since Jellyseerr manages media indexing, monitor the CPU and RAM usage to ensure adequate performance, especially during large scans.&lt;/li&gt;
+&lt;li&gt;Backup Strategy: Implement a robust backup strategy for the configuration files and the media directories themselves to protect your collection.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Suggested Tags&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;suggested-tags&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#suggested-tags&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;media
+monitoring
+storage
+automation
+productivity&lt;/p&gt;
+&lt;h2&gt;Network&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;network&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#network&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Interface&lt;/th&gt;
+          &lt;th&gt;Config&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;net0&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;name=eth0,bridge=vmbr0,hwaddr=BC:24:11:9B:D5:D3,ip=dhcp,type=veth&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;Storage&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;storage&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#storage&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Device&lt;/th&gt;
+          &lt;th&gt;Config&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;rootfs&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;TGroup1:vm-108-disk-0,size=32G&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Add manual notes here.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>lidarr</title>
+      <link>http://192.168.0.56:1313/docs/127-lidarr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.56:1313/docs/127-lidarr/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;Status:&lt;/strong&gt; Running | &lt;strong&gt;VMID:&lt;/strong&gt; 127 | &lt;strong&gt;Type:&lt;/strong&gt; LXC&lt;/p&gt;
+&lt;h2&gt;At a Glance&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;at-a-glance&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#at-a-glance&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Property&lt;/th&gt;
+          &lt;th&gt;Value&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;VMID&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;127&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Type&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;LXC&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Status&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;running&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;CPU Cores&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;2&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;RAM&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;1.0 GB&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Disk&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;23.54 GB&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Auto Start&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Yes&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Tags&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;## Suggested Tags&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Lidarr is a powerful, open-source application that serves as a media management hub, specifically designed for organizing and automating the downloading, renaming, and organizing of media files based on user-defined indexes. In a homelab environment, it is critical for setting up automated pipelines for acquiring and managing large volumes of media, seamlessly integrating torrent and usenet sources into a cohesive library system.&lt;/p&gt;
+&lt;h2&gt;Purpose&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;purpose&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#purpose&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Lidarr automates the entire workflow of media acquisition and organization, eliminating the need for manual file sorting and management. It is essential for creating a centralized, automated media library that functions as the backbone of a personal media server in a homelab setup.&lt;/p&gt;
+&lt;h2&gt;Key Features&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;key-features&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#key-features&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Automated Media Indexing: Scans configured indexers (like Prowlarr or Sonarr) to discover new media files.&lt;/li&gt;
+&lt;li&gt;Renaming and Organization: Automatically renames downloaded files according to established organizational rules.&lt;/li&gt;
+&lt;li&gt;Source Integration: Connects directly to torrent and usenet indexers to pull content.&lt;/li&gt;
+&lt;li&gt;Library Management: Provides a central dashboard for managing the status and location of all media series and movies.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Operational Notes&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;operational-notes&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#operational-notes&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Check Indexers Regularly:&lt;/strong&gt; Ensure that the configured indexers are functioning correctly and successfully updating. A broken indexer will halt your media pipeline.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Monitor Disk Space:&lt;/strong&gt; Since Lidarr handles large media files, consistently monitor the disk usage of this container to prevent filling up your storage volume.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Manage Queue Backlogs:&lt;/strong&gt; If you experience slow progress, check the activity logs to ensure that the download/ingestion process is not stalled due to network or configuration issues.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Suggested Tags&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;suggested-tags&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#suggested-tags&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;arr-stack
+media
+automation
+torrent
+storage&lt;/p&gt;
+&lt;h2&gt;Network&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;network&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#network&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Interface&lt;/th&gt;
+          &lt;th&gt;Config&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;net0&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;name=eth0,bridge=vmbr0,hwaddr=BC:24:11:6F:FA:AD,ip=dhcp,type=veth&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;Storage&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;storage&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#storage&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Device&lt;/th&gt;
+          &lt;th&gt;Config&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;mp0&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;/mnt/data/,mp=/data&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;rootfs&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;TGroup1:vm-127-disk-0,size=24G&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Add manual notes here.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>navidrome</title>
+      <link>http://192.168.0.56:1313/docs/122-navidrome/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.56:1313/docs/122-navidrome/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;Status:&lt;/strong&gt; Running | &lt;strong&gt;VMID:&lt;/strong&gt; 122 | &lt;strong&gt;Type:&lt;/strong&gt; LXC&lt;/p&gt;
+&lt;h2&gt;At a Glance&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;at-a-glance&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#at-a-glance&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Property&lt;/th&gt;
+          &lt;th&gt;Value&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;VMID&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;122&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Type&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;LXC&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Status&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;running&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;CPU Cores&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;2&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;RAM&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;1.0 GB&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Disk&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;35.35 GB&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Auto Start&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Yes&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Tags&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;## Suggested Tags&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Navidrome is a self-hosted media server application designed for organizing, managing, and streaming personal music libraries across a network. In a homelab environment, it serves as a centralized media hub, allowing users to access their music collections remotely and integrate seamlessly with other media management tools, transforming raw music files into an accessible, organized, and personalized streaming experience.&lt;/p&gt;
+&lt;h2&gt;Purpose&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;purpose&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#purpose&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;This container provides a dedicated, lightweight service for managing audio files and streaming them to other devices within the network. It allows the homelab owner to centralize music storage and access, eliminating the need for external streaming services.&lt;/p&gt;
+&lt;h2&gt;Key Features&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;key-features&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#key-features&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Centralized Music Library: Organizes all music files into an easily browsable structure.&lt;/li&gt;
+&lt;li&gt;Streaming Capability: Enables remote playback of music to connected devices.&lt;/li&gt;
+&lt;li&gt;Metadata Management: Automatically handles album art and artist information for rich media display.&lt;/li&gt;
+&lt;li&gt;Self-Hosted Control: Provides full control over media files and streaming settings within the homelab.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Operational Notes&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;operational-notes&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#operational-notes&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Resource Allocation: Since this is a media server, monitor the CPU and RAM usage, especially during peak streaming times, to ensure adequate performance.&lt;/li&gt;
+&lt;li&gt;File Organization: Ensure your music files are organized in a logical directory structure before configuring Navidrome to avoid clutter.&lt;/li&gt;
+&lt;li&gt;Updates: Regularly check for updates to the Navidrome container to ensure you are running the latest version with the newest features and security patches.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Suggested Tags&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;suggested-tags&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#suggested-tags&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;media
+storage
+music
+automation
+reverse-proxy&lt;/p&gt;
+&lt;h2&gt;Network&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;network&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#network&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Interface&lt;/th&gt;
+          &lt;th&gt;Config&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;net0&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;name=eth0,bridge=vmbr0,hwaddr=BC:24:11:96:7A:7E,ip=dhcp,type=veth&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;Storage&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;storage&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#storage&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Device&lt;/th&gt;
+          &lt;th&gt;Config&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;mp0&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;/mnt/data/,mp=/data&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;rootfs&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;TGroup1:vm-122-disk-0,size=36G&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Add manual notes here.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>prowlarr</title>
+      <link>http://192.168.0.56:1313/docs/104-prowlarr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.56:1313/docs/104-prowlarr/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;Status:&lt;/strong&gt; Running | &lt;strong&gt;VMID:&lt;/strong&gt; 104 | &lt;strong&gt;Type:&lt;/strong&gt; LXC&lt;/p&gt;
+&lt;h2&gt;At a Glance&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;at-a-glance&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#at-a-glance&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Property&lt;/th&gt;
+          &lt;th&gt;Value&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;VMID&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;104&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Type&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;LXC&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Status&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;running&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;CPU Cores&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;2&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;RAM&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;1.0 GB&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Disk&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;3.86 GB&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Auto Start&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Yes&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Tags&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;## Suggested Tags&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Prowlarr is a popular, self-hosted application that acts as a centralized indexer manager, primarily designed to integrate various media indexers (like Prowlarr, Lidarr, Sonarr) into a single dashboard. In a homelab environment, it plays a critical role in automating the discovery, indexing, and management of content from various sources, significantly reducing manual effort in managing media libraries and ensuring content is consistently available across different services.&lt;/p&gt;
+&lt;h2&gt;Purpose&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;purpose&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#purpose&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Prowlarr is invaluable in a homelab for automating the management of media indexers and ensuring content organization. It centralizes the complex process of finding, managing, and downloading media assets, allowing users to automate content acquisition from diverse sources without manual intervention. This setup promotes a centralized, reproducible workflow for media management.&lt;/p&gt;
+&lt;h2&gt;Key Features&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;key-features&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#key-features&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Centralized Indexer Management: Manages multiple indexers (e.g., torrent trackers) in one place.&lt;/li&gt;
+&lt;li&gt;Automated Discovery: Automatically discovers and manages media sources based on user-defined criteria.&lt;/li&gt;
+&lt;li&gt;Integration with Arr-Stack: Seamlessly integrates with the broader automation framework to manage workflows.&lt;/li&gt;
+&lt;li&gt;Simplified Workflow: Provides a unified interface for indexing, searching, and monitoring content sources.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Operational Notes&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;operational-notes&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#operational-notes&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Ensure all required indexers and downstream applications (like Radarr or Sonarr) are running and correctly configured before starting Prowlarr.&lt;/li&gt;
+&lt;li&gt;Verify that the container has sufficient network access to reach all required indexer sources; firewall rules must be checked if downloads fail.&lt;/li&gt;
+&lt;li&gt;Regularly check the application logs for errors, especially during indexer synchronization, to troubleshoot any connection or parsing issues.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Suggested Tags&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;suggested-tags&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#suggested-tags&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;arr-stack, media, automation, storage, reverse-proxy&lt;/p&gt;
+&lt;h2&gt;Network&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;network&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#network&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Interface&lt;/th&gt;
+          &lt;th&gt;Config&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;net0&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;name=eth0,bridge=vmbr0,hwaddr=BC:24:11:EB:21:2F,ip=dhcp,type=veth&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;Storage&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;storage&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#storage&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Device&lt;/th&gt;
+          &lt;th&gt;Config&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;rootfs&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;TGroup1:vm-104-disk-0,size=4G&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Add manual notes here.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>pulse</title>
+      <link>http://192.168.0.56:1313/docs/123-pulse/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.56:1313/docs/123-pulse/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;Status:&lt;/strong&gt; Running | &lt;strong&gt;VMID:&lt;/strong&gt; 123 | &lt;strong&gt;Type:&lt;/strong&gt; LXC&lt;/p&gt;
+&lt;h2&gt;At a Glance&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;at-a-glance&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#at-a-glance&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Property&lt;/th&gt;
+          &lt;th&gt;Value&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;VMID&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;123&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Type&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;LXC&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Status&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;running&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;CPU Cores&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;RAM&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;1.0 GB&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Disk&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;3.86 GB&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Auto Start&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Yes&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Tags&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;## Suggested Tags&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;This LXC container, named pulse, serves as a lightweight utility within the homelab environment, designed primarily for automation and system health monitoring. It acts as a centralized, single-purpose service that simplifies complex tasks, allowing the user to manage disparate services or gather critical telemetry without needing to deploy heavy, complex applications. It is foundational for making the homelab more efficient and manageable.&lt;/p&gt;
+&lt;h2&gt;Purpose&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;purpose&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#purpose&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Pulse is designed to automate repetitive administrative tasks and provide real-time operational insights across the host system or network. It drastically reduces the manual overhead required for tracking system health and executing scheduled tasks, freeing up time for more critical projects.&lt;/p&gt;
+&lt;h2&gt;Key Features&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;key-features&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#key-features&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Automated system health checks and status reporting.&lt;/li&gt;
+&lt;li&gt;Scheduled execution of custom scripts for maintenance and data collection.&lt;/li&gt;
+&lt;li&gt;Lightweight resource usage, making it ideal for running on resource-constrained LXC environments.&lt;/li&gt;
+&lt;li&gt;Centralized log aggregation for ease of troubleshooting.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Operational Notes&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;operational-notes&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#operational-notes&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Ensure the container has appropriate network permissions (e.g., access to system logs) to function correctly.&lt;/li&gt;
+&lt;li&gt;Schedule routine tasks using cron jobs within the container to ensure continuous monitoring without manual intervention.&lt;/li&gt;
+&lt;li&gt;Periodically review the container logs to diagnose any failures or discrepancies in the automated reports.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Suggested Tags&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;suggested-tags&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#suggested-tags&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;monitoring
+automation
+community-script
+productivity
+system&lt;/p&gt;
+&lt;h2&gt;Network&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;network&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#network&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Interface&lt;/th&gt;
+          &lt;th&gt;Config&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;net0&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;name=eth0,bridge=vmbr0,hwaddr=BC:24:11:FF:A8:F8,ip=dhcp,type=veth&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;Storage&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;storage&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#storage&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Device&lt;/th&gt;
+          &lt;th&gt;Config&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;rootfs&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;TGroup1:vm-123-disk-0,size=4G&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Add manual notes here.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>radarr</title>
+      <link>http://192.168.0.56:1313/docs/102-radarr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.56:1313/docs/102-radarr/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;Status:&lt;/strong&gt; Running | &lt;strong&gt;VMID:&lt;/strong&gt; 102 | &lt;strong&gt;Type:&lt;/strong&gt; LXC&lt;/p&gt;
+&lt;h2&gt;At a Glance&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;at-a-glance&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#at-a-glance&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Property&lt;/th&gt;
+          &lt;th&gt;Value&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;VMID&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;102&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Type&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;LXC&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Status&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;running&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;CPU Cores&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;2&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;RAM&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;1.0 GB&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Disk&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;13.68 GB&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Auto Start&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Yes&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Tags&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;## Suggested Tags&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Radarr is a popular open-source application designed to manage and organize your media collections, specifically television shows and movies. In a homelab environment, it serves as a centralized media management hub, automating the process of finding, downloading, organizing, and renaming media files directly into your chosen storage locations.&lt;/p&gt;
+&lt;h2&gt;Purpose&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;purpose&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#purpose&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Radarr significantly enhances media management by automating the entire process of media acquisition and organization. It eliminates manual file searching and renaming, allowing the user to maintain perfectly sorted and accessible media libraries within the homelab infrastructure.&lt;/p&gt;
+&lt;h2&gt;Key Features&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;key-features&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#key-features&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Automated Indexing: Scans configured folders for new media releases from various torrent trackers.&lt;/li&gt;
+&lt;li&gt;Series Management: Automatically organizes downloaded content into proper season and episode directories.&lt;/li&gt;
+&lt;li&gt;Quality Control: Integrates with indexers (like Sonarr) to ensure that media is downloaded in the desired quality and format.&lt;/li&gt;
+&lt;li&gt;Queue System: Provides a centralized queue for managing ongoing downloads and processing tasks.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Operational Notes&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;operational-notes&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#operational-notes&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Ensure adequate disk space is allocated on the host system, as media downloads can consume significant temporary space.&lt;/li&gt;
+&lt;li&gt;Regularly verify the configured indexers and download clients to ensure continuous operation and access to new media sources.&lt;/li&gt;
+&lt;li&gt;Monitor the logs periodically to troubleshoot any download failures or indexing errors that may occur during the media acquisition process.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Suggested Tags&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;suggested-tags&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#suggested-tags&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;arr-stack
+media
+automation
+storage
+arr-stack&lt;/p&gt;
+&lt;h2&gt;Network&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;network&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#network&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Interface&lt;/th&gt;
+          &lt;th&gt;Config&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;net0&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;name=eth0,bridge=vmbr0,hwaddr=BC:24:11:2E:3A:50,ip=dhcp,type=veth&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;Storage&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;storage&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#storage&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Device&lt;/th&gt;
+          &lt;th&gt;Config&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;mp0&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;/mnt/data/,mp=/data&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;rootfs&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;TGroup1:vm-102-disk-0,size=14G&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Add manual notes here.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>semaphore</title>
+      <link>http://192.168.0.56:1313/docs/111-semaphore/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.56:1313/docs/111-semaphore/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;Status:&lt;/strong&gt; Running | &lt;strong&gt;VMID:&lt;/strong&gt; 111 | &lt;strong&gt;Type:&lt;/strong&gt; LXC&lt;/p&gt;
+&lt;h2&gt;At a Glance&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;at-a-glance&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#at-a-glance&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Property&lt;/th&gt;
+          &lt;th&gt;Value&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;VMID&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;111&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Type&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;LXC&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Status&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;running&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;CPU Cores&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;2&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;RAM&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;2.0 GB&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Disk&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;3.86 GB&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Auto Start&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Yes&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Tags&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;## Suggested Tags&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Semaphore is a lightweight Linux container environment (LXC) designed to host and execute community-driven scripts and automation tasks within a homelab environment. Its primary role is to provide an isolated, reproducible execution environment for complex commands, allowing users to manage and automate repetitive tasks without cluttering the host system. It serves as a dedicated sandbox for running custom development and DevOps workflows.&lt;/p&gt;
+&lt;h2&gt;Purpose&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;purpose&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#purpose&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;This container is primarily used for executing custom shell scripts and automation workflows specific to the homelab environment. It isolates these potentially complex or resource-intensive tasks from the host operating system, ensuring predictability and simplifying management.&lt;/p&gt;
+&lt;h2&gt;Key Features&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;key-features&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#key-features&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Provides an isolated environment for running custom scripts and automation tasks.&lt;/li&gt;
+&lt;li&gt;Utilizes LXC technology for lightweight and efficient resource utilization.&lt;/li&gt;
+&lt;li&gt;Allocates dedicated resources (2 CPU cores, 2.0 GB RAM) for reliable execution of jobs.&lt;/li&gt;
+&lt;li&gt;Acts as a dedicated sandbox for testing community-developed DevOps workflows.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Operational Notes&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;operational-notes&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#operational-notes&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Regularly review the container logs to troubleshoot script execution errors or resource bottlenecks.&lt;/li&gt;
+&lt;li&gt;Ensure that all custom scripts executed within the container follow secure coding practices, as they run with elevated permissions.&lt;/li&gt;
+&lt;li&gt;Since this is a development/automation tool, establish a clear backup schedule for any custom scripts or generated configuration files.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Suggested Tags&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;suggested-tags&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#suggested-tags&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;automation, development, dev_ops, productivity, community-script&lt;/p&gt;
+&lt;h2&gt;Network&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;network&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#network&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Interface&lt;/th&gt;
+          &lt;th&gt;Config&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;net0&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;name=eth0,bridge=vmbr0,hwaddr=BC:24:11:61:DD:02,ip=dhcp,type=veth&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;Storage&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;storage&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#storage&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Device&lt;/th&gt;
+          &lt;th&gt;Config&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;rootfs&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;TGroup1:vm-111-disk-0,size=4G&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Add manual notes here.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>shelfmark</title>
+      <link>http://192.168.0.56:1313/docs/117-shelfmark/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.56:1313/docs/117-shelfmark/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;Status:&lt;/strong&gt; Running | &lt;strong&gt;VMID:&lt;/strong&gt; 117 | &lt;strong&gt;Type:&lt;/strong&gt; LXC&lt;/p&gt;
+&lt;h2&gt;At a Glance&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;at-a-glance&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#at-a-glance&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Property&lt;/th&gt;
+          &lt;th&gt;Value&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;VMID&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;117&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Type&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;LXC&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Status&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;running&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;CPU Cores&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;2&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;RAM&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;2.0 GB&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Disk&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;7.78 GB&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Auto Start&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Yes&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Tags&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;## Suggested Tags&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;shelfmark is a lightweight LXC container designed to host community scripts and reference material within a homelab environment. Its primary role is to serve as a centralized repository for self-developed automation tasks and knowledge resources, simplifying the setup and management of complex homelab projects. It acts as a knowledge hub, allowing users to easily deploy and run pre-configured scripts without requiring extensive manual setup.&lt;/p&gt;
+&lt;h2&gt;Purpose&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;purpose&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#purpose&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;This container is useful for housing specific community-developed scripts and ebook resources, centralizing custom automation workflows within the homelab. It provides a portable and isolated environment for running complex tools and managing project-specific documentation.&lt;/p&gt;
+&lt;h2&gt;Key Features&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;key-features&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#key-features&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Runs as a lightweight LXC container, minimizing overhead and maximizing resource efficiency.&lt;/li&gt;
+&lt;li&gt;Dedicated space for storing community-developed scripts and ebook documentation.&lt;/li&gt;
+&lt;li&gt;Provides an isolated environment for running specific automation tasks.&lt;/li&gt;
+&lt;li&gt;Optimized for resource efficiency, utilizing only 2.0 GB of RAM and 2 CPU cores.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Operational Notes&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;operational-notes&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#operational-notes&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Ensure regular backups of the container&amp;rsquo;s configuration and script files to prevent data loss.&lt;/li&gt;
+&lt;li&gt;Monitor CPU and RAM usage periodically to ensure the container is not overburdened by automated processes.&lt;/li&gt;
+&lt;li&gt;Keep the container image and associated scripts updated to maintain compatibility and security.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Suggested Tags&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;suggested-tags&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#suggested-tags&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;automation, development, productivity, storage, community-script&lt;/p&gt;
+&lt;h2&gt;Network&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;network&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#network&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Interface&lt;/th&gt;
+          &lt;th&gt;Config&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;net0&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;name=eth0,bridge=vmbr0,hwaddr=BC:24:11:BE:D2:1F,ip=dhcp,type=veth&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;Storage&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;storage&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#storage&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Device&lt;/th&gt;
+          &lt;th&gt;Config&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;rootfs&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;TGroup1:vm-117-disk-0,size=8G&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Add manual notes here.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>shelfmark</title>
+      <link>http://192.168.0.56:1313/docs/126-shelfmark/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.56:1313/docs/126-shelfmark/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;Status:&lt;/strong&gt; Running | &lt;strong&gt;VMID:&lt;/strong&gt; 126 | &lt;strong&gt;Type:&lt;/strong&gt; LXC&lt;/p&gt;
+&lt;h2&gt;At a Glance&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;at-a-glance&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#at-a-glance&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Property&lt;/th&gt;
+          &lt;th&gt;Value&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;VMID&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;126&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Type&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;LXC&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Status&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;running&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;CPU Cores&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;2&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;RAM&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;2.0 GB&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Disk&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;7.78 GB&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Auto Start&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Yes&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Tags&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;## Suggested Tags&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;This container, shelfmark, serves as a dedicated platform for housing community-driven scripts and educational resources within the homelab environment. Its primary role is to centralize knowledge, automate repetitive tasks, and provide easy access to useful scripts and ebooks, enhancing the overall productivity and self-learning experience of the homelab owner.&lt;/p&gt;
+&lt;h2&gt;Purpose&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;purpose&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#purpose&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;shelfmark is designed to act as a centralized repository for useful automation scripts and educational materials. It allows the homelab owner to easily deploy, manage, and access community-developed solutions without needing to manually set up complex environments. This significantly speeds up the learning curve and the implementation of complex automation projects.&lt;/p&gt;
+&lt;h2&gt;Key Features&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;key-features&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#key-features&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Centralized repository for community scripts and educational ebooks.&lt;/li&gt;
+&lt;li&gt;Lightweight LXC container setup for efficient resource utilization.&lt;/li&gt;
+&lt;li&gt;Dedicated space for managing automation and development tools.&lt;/li&gt;
+&lt;li&gt;Easy access and deployment of pre-written scripts.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Operational Notes&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;operational-notes&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#operational-notes&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Ensure that system updates are regularly applied to maintain the security and compatibility of the scripts stored within.&lt;/li&gt;
+&lt;li&gt;Monitor the disk space regularly, as the storage of scripts and ebooks can grow over time.&lt;/li&gt;
+&lt;li&gt;Use this environment to test new automation workflows before deploying them to production systems.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Suggested Tags&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;suggested-tags&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#suggested-tags&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;automation
+development
+productivity
+community-script
+storage&lt;/p&gt;
+&lt;h2&gt;Network&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;network&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#network&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Interface&lt;/th&gt;
+          &lt;th&gt;Config&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;net0&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;name=eth0,bridge=vmbr0,hwaddr=BC:24:11:6B:5A:5F,ip=dhcp,type=veth&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;Storage&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;storage&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#storage&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Device&lt;/th&gt;
+          &lt;th&gt;Config&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;rootfs&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;TGroup1:vm-126-disk-0,size=8G&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Add manual notes here.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>sonarr</title>
+      <link>http://192.168.0.56:1313/docs/101-sonarr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.56:1313/docs/101-sonarr/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;Status:&lt;/strong&gt; Running | &lt;strong&gt;VMID:&lt;/strong&gt; 101 | &lt;strong&gt;Type:&lt;/strong&gt; LXC&lt;/p&gt;
+&lt;h2&gt;At a Glance&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;at-a-glance&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#at-a-glance&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Property&lt;/th&gt;
+          &lt;th&gt;Value&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;VMID&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;101&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Type&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;LXC&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Status&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;running&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;CPU Cores&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;2&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;RAM&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;1.0 GB&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Disk&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;3.86 GB&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Auto Start&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Yes&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Tags&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;## Suggested Tags&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Sonarr is a powerful, open-source application designed to automatically manage your media libraries by downloading and organizing content from various indexers. In a homelab environment, Sonarr acts as a crucial automation tool, centralizing media management, eliminating the manual effort required for finding, downloading, and organizing movies and TV shows. It forms a core component of a self-hosted media stack, providing structure and organization to personal media collections.&lt;/p&gt;
+&lt;h2&gt;Purpose&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;purpose&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#purpose&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Sonarr’s primary function is to automate the process of finding, downloading, and organizing media content from various sources. In a homelab, it allows users to centralize their media assets, ensuring that collections are consistently updated and structured without manual intervention.&lt;/p&gt;
+&lt;h2&gt;Key Features&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;key-features&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#key-features&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Automated Indexing: Scans configured indexers to find new media titles.&lt;/li&gt;
+&lt;li&gt;Download Management: Facilitates the downloading of media files from sources.&lt;/li&gt;
+&lt;li&gt;Series Organization: Automatically organizes downloaded content into specified folders based on series and season.&lt;/li&gt;
+&lt;li&gt;Template Support: Allows for custom configuration and automation of the entire media pipeline.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Operational Notes&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;operational-notes&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#operational-notes&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Ensure proper configuration of your indexers and download clients (like Radarr or Prowler) before starting the Sonarr service to prevent configuration drift.&lt;/li&gt;
+&lt;li&gt;Monitor disk space regularly, as media downloads can consume significant storage space quickly.&lt;/li&gt;
+&lt;li&gt;Keep the Sonarr container updated to ensure access to the latest features and security patches.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Suggested Tags&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;suggested-tags&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#suggested-tags&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;arr-stack
+media
+automation
+storage
+community-script&lt;/p&gt;
+&lt;h2&gt;Network&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;network&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#network&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Interface&lt;/th&gt;
+          &lt;th&gt;Config&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;net0&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;name=eth0,bridge=vmbr0,hwaddr=BC:24:11:3E:91:87,ip=dhcp,type=veth&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;Storage&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;storage&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#storage&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Device&lt;/th&gt;
+          &lt;th&gt;Config&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;mp0&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;/mnt/data/,mp=/data&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;rootfs&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;TGroup1:vm-101-disk-0,size=4G&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Add manual notes here.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>syncthing</title>
+      <link>http://192.168.0.56:1313/docs/106-syncthing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.56:1313/docs/106-syncthing/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;Status:&lt;/strong&gt; Running | &lt;strong&gt;VMID:&lt;/strong&gt; 106 | &lt;strong&gt;Type:&lt;/strong&gt; LXC&lt;/p&gt;
+&lt;h2&gt;At a Glance&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;at-a-glance&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#at-a-glance&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Property&lt;/th&gt;
+          &lt;th&gt;Value&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;VMID&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;106&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Type&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;LXC&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Status&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;running&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;CPU Cores&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;2&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;RAM&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;2.0 GB&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Disk&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;15.64 GB&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Auto Start&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Yes&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Tags&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;## Suggested Tags&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Syncthing is a free, open-source, decentralized file synchronization program that allows users to securely share files and folders across multiple devices. In a homelab environment, Syncthing serves as a crucial tool for creating a robust, self-hosted media server and data redundancy solution, allowing users to maintain seamless, secure synchronization of personal files regardless of location or external cloud services.&lt;/p&gt;
+&lt;h2&gt;Purpose&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;purpose&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#purpose&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;This container is designed to establish a peer-to-peer file synchronization network within the homelab. It allows users to securely sync media, documents, and backups across various devices, providing an alternative to centralized cloud storage solutions. This setup significantly enhances data independence, security, and control over personal data within the home network.&lt;/p&gt;
+&lt;h2&gt;Key Features&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;key-features&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#key-features&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Peer-to-Peer Synchronization: Facilitates direct, decentralized file sharing between connected devices without relying on a central server.&lt;/li&gt;
+&lt;li&gt;End-to-End Encryption: All data transferred is secured using strong encryption protocols, ensuring privacy and data security.&lt;/li&gt;
+&lt;li&gt;Real-time Sync: Automatically monitors directories and synchronizes changes instantly across all synchronized nodes.&lt;/li&gt;
+&lt;li&gt;Customizable Sharing: Offers granular control over which folders are shared with which devices and synchronization rules.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Operational Notes&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;operational-notes&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#operational-notes&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Ensure that the Syncthing ports (default 22000) are properly exposed on your router&amp;rsquo;s firewall if you need to access the synchronization from outside your local network.&lt;/li&gt;
+&lt;li&gt;Configure secure, unique IDs for each device to ensure only authorized peers can synchronize data, which is essential for security.&lt;/li&gt;
+&lt;li&gt;Regularly check the synchronization status and logs to monitor for any connection errors or synchronization failures.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Suggested Tags&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;suggested-tags&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#suggested-tags&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;storage, security, automation, sync, media&lt;/p&gt;
+&lt;h2&gt;Network&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;network&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#network&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Interface&lt;/th&gt;
+          &lt;th&gt;Config&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;net0&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;name=eth0,bridge=vmbr0,hwaddr=BC:24:11:FE:4B:44,ip=dhcp,type=veth&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;Storage&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;storage&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#storage&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Device&lt;/th&gt;
+          &lt;th&gt;Config&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;rootfs&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;TGroup1:vm-106-disk-0,size=16G&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Add manual notes here.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>tailscalecity</title>
+      <link>http://192.168.0.56:1313/docs/114-tailscalecity/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.56:1313/docs/114-tailscalecity/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;Status:&lt;/strong&gt; Running | &lt;strong&gt;VMID:&lt;/strong&gt; 114 | &lt;strong&gt;Type:&lt;/strong&gt; LXC&lt;/p&gt;
+&lt;h2&gt;At a Glance&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;at-a-glance&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#at-a-glance&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Property&lt;/th&gt;
+          &lt;th&gt;Value&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;VMID&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;114&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Type&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;LXC&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Status&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;running&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;CPU Cores&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;RAM&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;1.0 GB&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Disk&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;9.75 GB&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Auto Start&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Yes&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Tags&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;## Suggested Tags&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;This container, tailscalecity, serves as a dedicated instance for running Tailscale, providing secure, zero-config networking and mesh capabilities across the homelab environment. Its primary role is to establish a secure overlay network, allowing devices to communicate securely regardless of physical location, which is crucial for segmented and secure homelab setups.&lt;/p&gt;
+&lt;h2&gt;Purpose&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;purpose&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#purpose&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;This instance is essential for securely connecting all homelab devices into a private, encrypted network. It facilitates secure peer-to-peer communication and simplifies network management by providing a unified access point for all services running on the host.&lt;/p&gt;
+&lt;h2&gt;Key Features&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;key-features&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#key-features&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Provides a secure, zero-configuration VPN/overlay mesh network for all homelab devices.&lt;/li&gt;
+&lt;li&gt;Simplifies device discovery and access management across the network.&lt;/li&gt;
+&lt;li&gt;Implements strong, end-to-end encryption for all network traffic.&lt;/li&gt;
+&lt;li&gt;Acts as a central node for secure networking within the home lab environment.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Operational Notes&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;operational-notes&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#operational-notes&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Ensure that all critical services are running on the Tailscale network before attempting to access them remotely.&lt;/li&gt;
+&lt;li&gt;Keep the Tailscale service updated regularly to ensure the latest security patches and feature enhancements.&lt;/li&gt;
+&lt;li&gt;Use Tailscale&amp;rsquo;s subnet routing capabilities to ensure that traffic flows efficiently and securely between internal machines.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Suggested Tags&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;suggested-tags&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#suggested-tags&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;networking, security, automation, tailscale, community-script&lt;/p&gt;
+&lt;h2&gt;Network&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;network&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#network&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Interface&lt;/th&gt;
+          &lt;th&gt;Config&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;net0&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;name=eth0,bridge=vmbr0,hwaddr=BC:24:11:65:C8:8A,ip=dhcp,type=veth&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;Storage&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;storage&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#storage&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Device&lt;/th&gt;
+          &lt;th&gt;Config&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;rootfs&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;TGroup1:vm-114-disk-0,size=10G&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Add manual notes here.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>tunarr</title>
+      <link>http://192.168.0.56:1313/docs/125-tunarr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.56:1313/docs/125-tunarr/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;Status:&lt;/strong&gt; Running | &lt;strong&gt;VMID:&lt;/strong&gt; 125 | &lt;strong&gt;Type:&lt;/strong&gt; LXC&lt;/p&gt;
+&lt;h2&gt;At a Glance&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;at-a-glance&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#at-a-glance&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Property&lt;/th&gt;
+          &lt;th&gt;Value&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;VMID&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;125&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Type&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;LXC&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Status&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;running&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;CPU Cores&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;3&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;RAM&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;1.98 GB&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Disk&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;4.84 GB&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Auto Start&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Yes&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Tags&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;## Suggested Tags&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;tunarr is a containerized application designed to streamline the management and streaming of media content within a homelab environment. It acts as a centralized hub, automating the process of finding, downloading, and organizing various media files from numerous indexers. Its role is to simplify media acquisition, storage, and delivery, making complex media management tasks accessible and automated for the homelab user.&lt;/p&gt;
+&lt;h2&gt;Purpose&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;purpose&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#purpose&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Tunarr significantly enhances homelab productivity by automating the complex task of media indexing and downloading. It allows users to centrally manage their entire media library, ensuring that content is easily discovered, organized, and streamed across various devices.&lt;/p&gt;
+&lt;h2&gt;Key Features&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;key-features&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#key-features&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Automated Indexing: Connects to various media indexers (like Sonarr, Radarr, Lidarr) to discover new content.&lt;/li&gt;
+&lt;li&gt;Media Management: Centralizes the download, renaming, and organization of movies, TV shows, and music.&lt;/li&gt;
+&lt;li&gt;Streamlined Workflow: Integrates various media tools into a single, cohesive automation stack.&lt;/li&gt;
+&lt;li&gt;Containerized Deployment: Runs efficiently as an LXC container, simplifying setup and maintenance on a Linux host.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Operational Notes&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;operational-notes&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#operational-notes&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Resource Allocation: Monitor the CPU and RAM usage regularly, especially during heavy indexing or download operations, to ensure adequate resources for the system.&lt;/li&gt;
+&lt;li&gt;Network Configuration: Ensure that all media indexers and download clients are accessible within the container&amp;rsquo;s network, typically via shared network bridges or VPNs.&lt;/li&gt;
+&lt;li&gt;Backup Strategy: Implement a robust backup routine for the configuration files and the actual media storage directories to prevent data loss.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Suggested Tags&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;suggested-tags&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#suggested-tags&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;media
+automation
+arr-stack
+storage
+community-script&lt;/p&gt;
+&lt;h2&gt;Network&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;network&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#network&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Interface&lt;/th&gt;
+          &lt;th&gt;Config&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;net0&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;name=eth0,bridge=vmbr0,hwaddr=BC:24:11:B5:BC:3D,ip=dhcp,type=veth&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;Storage&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;storage&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#storage&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Device&lt;/th&gt;
+          &lt;th&gt;Config&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;mp0&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;/mnt/data/,mp=/data&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;rootfs&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;TGroup1:vm-125-disk-0,size=5G&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Add manual notes here.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>uptimekuma</title>
+      <link>http://192.168.0.56:1313/docs/109-uptimekuma/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.56:1313/docs/109-uptimekuma/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;Status:&lt;/strong&gt; Running | &lt;strong&gt;VMID:&lt;/strong&gt; 109 | &lt;strong&gt;Type:&lt;/strong&gt; LXC&lt;/p&gt;
+&lt;h2&gt;At a Glance&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;at-a-glance&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#at-a-glance&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Property&lt;/th&gt;
+          &lt;th&gt;Value&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;VMID&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;109&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Type&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;LXC&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Status&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;running&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;CPU Cores&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;RAM&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;1.0 GB&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Disk&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;11.73 GB&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Auto Start&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Yes&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Tags&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;## Suggested Tags&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;This document details the deployment and usage of the uptimekuma monitoring system running on VMID 109.&lt;/p&gt;
+&lt;p&gt;uptimekuma is a comprehensive and user-friendly monitoring dashboard designed to provide a holistic overview of the health and performance of your homelab infrastructure. It aggregates data from various sources, allowing users to visualize system metrics, service statuses, and resource utilization in a single, cohesive interface. In a homelab environment, uptimekuma serves as the central control panel, transforming complex raw metrics into actionable insights necessary for effective system management and proactive troubleshooting.&lt;/p&gt;
+&lt;h2&gt;Purpose&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;purpose&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#purpose&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;This container provides an easy-to-read interface for centralized system monitoring. It allows users to quickly assess the operational status of all services, applications, and underlying infrastructure from a single dashboard. This greatly reduces the time spent manually checking logs and metrics, making homelab management more efficient and less stressful.&lt;/p&gt;
+&lt;h2&gt;Key Features&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;key-features&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#key-features&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Centralized Dashboard: Provides a beautiful, intuitive interface for viewing system health and service status.&lt;/li&gt;
+&lt;li&gt;Multi-Source Integration: Connects with various monitoring tools (like Prometheus and various exporters) to aggregate diverse data streams.&lt;/li&gt;
+&lt;li&gt;Real-time Visualization: Displays dynamic graphs and metrics, offering immediate insight into system performance.&lt;/li&gt;
+&lt;li&gt;Service Overview: Offers a clear, organized view of all configured services, making it easy to track dependencies.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Operational Notes&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;operational-notes&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#operational-notes&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Ensure necessary monitoring components (like Prometheus) are running and accessible before attempting to configure uptimekuma.&lt;/li&gt;
+&lt;li&gt;Since uptimekuma relies on external data sources, periodically check the application logs for any connection errors or failed metric pulls if the dashboard data appears stale.&lt;/li&gt;
+&lt;li&gt;Given its role as a monitoring tool, ensure sufficient resources (RAM/CPU) are allocated to the VM to handle data processing efficiently, especially as more metrics are added over time.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Suggested Tags&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;suggested-tags&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#suggested-tags&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;monitoring
+automation
+networking
+development
+productivity&lt;/p&gt;
+&lt;h2&gt;Network&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;network&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#network&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Interface&lt;/th&gt;
+          &lt;th&gt;Config&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;net0&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;name=eth0,bridge=vmbr0,hwaddr=BC:24:11:8C:8D:A1,ip=dhcp,type=veth&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;Storage&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;storage&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#storage&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Device&lt;/th&gt;
+          &lt;th&gt;Config&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;rootfs&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;TGroup1:vm-109-disk-0,size=12G&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Add manual notes here.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>yubal</title>
+      <link>http://192.168.0.56:1313/docs/124-yubal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.56:1313/docs/124-yubal/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;Status:&lt;/strong&gt; Running | &lt;strong&gt;VMID:&lt;/strong&gt; 124 | &lt;strong&gt;Type:&lt;/strong&gt; LXC&lt;/p&gt;
+&lt;h2&gt;At a Glance&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;at-a-glance&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#at-a-glance&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Property&lt;/th&gt;
+          &lt;th&gt;Value&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;VMID&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;124&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Type&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;LXC&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Status&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;running&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;CPU Cores&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;2&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;RAM&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;2.0 GB&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Disk&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;46.15 GB&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Auto Start&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Yes&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Tags&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;## Suggested Tags&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;yubal is an LXC container designed to serve as a dedicated hub for media management and custom scripting within the homelab environment. Its primary role is to centralize audio and visual assets, allowing for organized streaming and automated management of personal media collections. This container acts as a focused environment for running community-developed scripts related to media handling and organization.&lt;/p&gt;
+&lt;h2&gt;Purpose&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;purpose&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#purpose&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;This container is primarily useful for centrally managing and serving media files (music and media) across the network. It provides a dedicated, isolated space for running custom automation scripts that streamline media organization and playback tasks.&lt;/p&gt;
+&lt;h2&gt;Key Features&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;key-features&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#key-features&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Runs as a lightweight LXC container, optimizing resource usage on the host system.&lt;/li&gt;
+&lt;li&gt;Dedicated storage for organizing music and media collections (46.15 GB allocated).&lt;/li&gt;
+&lt;li&gt;Execution environment for community-scripted automation tasks.&lt;/li&gt;
+&lt;li&gt;Optimized for media streaming and file management within the homelab.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Operational Notes&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;operational-notes&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#operational-notes&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Monitor the resource usage closely, as the 2.0 GB RAM allocation is sufficient, but heavy processing scripts can cause resource contention.&lt;/li&gt;
+&lt;li&gt;Establish a consistent backup routine for the container&amp;rsquo;s disk space, especially given the media focus.&lt;/li&gt;
+&lt;li&gt;Ensure that necessary permissions are configured to allow scripts access to the media storage and network resources.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Suggested Tags&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;suggested-tags&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#suggested-tags&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;media
+automation
+storage
+community-script
+music&lt;/p&gt;
+&lt;h2&gt;Network&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;network&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#network&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Interface&lt;/th&gt;
+          &lt;th&gt;Config&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;net0&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;name=eth0,bridge=vmbr0,hwaddr=BC:24:11:C8:5F:4F,ip=dhcp,type=veth&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;Storage&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;storage&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#storage&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Device&lt;/th&gt;
+          &lt;th&gt;Config&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;rootfs&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;TGroup1:vm-124-disk-0,size=47G&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Add manual notes here.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

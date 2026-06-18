@@ -1,0 +1,138 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Homelab Documentation – Community-Script;dev_ops</title>
+    <link>http://192.168.0.56:1313/tags/community-scriptdev_ops/</link>
+    <description>Recent content in Community-Script;dev_ops on Homelab Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	  <atom:link href="http://192.168.0.56:1313/tags/community-scriptdev_ops/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>semaphore</title>
+      <link>http://192.168.0.56:1313/guests/111-semaphore/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.56:1313/guests/111-semaphore/</guid>
+      <description>
+        
+        
+        &lt;h2&gt;Summary&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;summary&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#summary&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;VMID: &lt;strong&gt;111&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Type: &lt;strong&gt;LXC&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Status: &lt;strong&gt;running&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Node: &lt;strong&gt;pve&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;CPU: &lt;strong&gt;2&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;RAM: &lt;strong&gt;2.0 GB&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Disk: &lt;strong&gt;3.86 GB&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;On Boot: &lt;strong&gt;1&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Startup: &lt;strong&gt;n/a&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Tags: &lt;strong&gt;community-script;dev_ops&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Network&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;network&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#network&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Interface&lt;/th&gt;
+          &lt;th&gt;Config&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;net0&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;name=eth0,bridge=vmbr0,hwaddr=BC:24:11:61:DD:02,ip=dhcp,type=veth&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;Storage&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;storage&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#storage&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Device&lt;/th&gt;
+          &lt;th&gt;Config&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;rootfs&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;TGroup1:vm-111-disk-0,size=4G&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;Description&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;description&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#description&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;div align=&#39;center&#39;&gt;
+  &lt;a href=&#39;https://community-scripts.org&#39; target=&#39;_blank&#39; rel=&#39;noopener noreferrer&#39;&gt;
+    &lt;img src=&#39;https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/misc/images/logo-81x112.png&#39; alt=&#39;Logo&#39; style=&#39;width:81px;height:112px;&#39;/&gt;
+  &lt;/a&gt;
+  &lt;h2 style=&#39;font-size: 24px; margin: 20px 0;&#39;&gt;Semaphore LXC&lt;/h2&gt;
+  &lt;p style=&#39;margin: 16px 0;&#39;&gt;
+    &lt;a href=&#39;https://community-scripts.org/donate&#39; target=&#39;_blank&#39; rel=&#39;noopener noreferrer&#39;&gt;
+      &lt;img src=&#39;https://img.shields.io/badge/❤️-Sponsoring%20%26%20Donations-FF5E5B&#39; alt=&#39;Sponsoring and donations&#39; /&gt;
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;p style=&#39;margin: 12px 0;&#39;&gt;
+    &lt;a href=&#39;https://community-scripts.org/scripts/semaphore&#39; target=&#39;_blank&#39; rel=&#39;noopener noreferrer&#39;&gt;
+      &lt;img src=&#39;https://img.shields.io/badge/📦-Open%20Script%20Page-00617f&#39; alt=&#39;Open script page&#39; /&gt;
+    &lt;/a&gt;
+  &lt;/p&gt;
+  &lt;span style=&#39;margin: 0 10px;&#39;&gt;
+    &lt;i class=&#34;fa fa-github fa-fw&#34; style=&#34;color: #f5f5f5;&#34;&gt;&lt;/i&gt;
+    &lt;a href=&#39;https://github.com/community-scripts/ProxmoxVE&#39; target=&#39;_blank&#39; rel=&#39;noopener noreferrer&#39; style=&#39;text-decoration: none; color: #00617f;&#39;&gt;GitHub&lt;/a&gt;
+  &lt;/span&gt;
+  &lt;span style=&#39;margin: 0 10px;&#39;&gt;
+    &lt;i class=&#34;fa fa-comments fa-fw&#34; style=&#34;color: #f5f5f5;&#34;&gt;&lt;/i&gt;
+    &lt;a href=&#39;https://github.com/community-scripts/ProxmoxVE/discussions&#39; target=&#39;_blank&#39; rel=&#39;noopener noreferrer&#39; style=&#39;text-decoration: none; color: #00617f;&#39;&gt;Discussions&lt;/a&gt;
+  &lt;/span&gt;
+  &lt;span style=&#39;margin: 0 10px;&#39;&gt;
+    &lt;i class=&#34;fa fa-exclamation-circle fa-fw&#34; style=&#34;color: #f5f5f5;&#34;&gt;&lt;/i&gt;
+    &lt;a href=&#39;https://github.com/community-scripts/ProxmoxVE/issues&#39; target=&#39;_blank&#39; rel=&#39;noopener noreferrer&#39; style=&#39;text-decoration: none; color: #00617f;&#39;&gt;Issues&lt;/a&gt;
+  &lt;/span&gt;
+&lt;/div&gt;
+&lt;h2&gt;Raw Config Snapshot&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;raw-config-snapshot&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#raw-config-snapshot&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;arch&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;amd64&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;cores&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;description&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;lt;div align=&amp;#39;center&amp;#39;&amp;gt;\n  &amp;lt;a href=&amp;#39;https://community-scripts.org&amp;#39; target=&amp;#39;_blank&amp;#39; rel=&amp;#39;noopener noreferrer&amp;#39;&amp;gt;\n    &amp;lt;img src=&amp;#39;https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/misc/images/logo-81x112.png&amp;#39; alt=&amp;#39;Logo&amp;#39; style=&amp;#39;width:81px;height:112px;&amp;#39;/&amp;gt;\n  &amp;lt;/a&amp;gt;\n\n  &amp;lt;h2 style=&amp;#39;font-size: 24px; margin: 20px 0;&amp;#39;&amp;gt;Semaphore LXC&amp;lt;/h2&amp;gt;\n\n  &amp;lt;p style=&amp;#39;margin: 16px 0;&amp;#39;&amp;gt;\n    &amp;lt;a href=&amp;#39;https://community-scripts.org/donate&amp;#39; target=&amp;#39;_blank&amp;#39; rel=&amp;#39;noopener noreferrer&amp;#39;&amp;gt;\n      &amp;lt;img src=&amp;#39;https://img.shields.io/badge/\u2764\ufe0f-Sponsoring%20%26%20Donations-FF5E5B&amp;#39; alt=&amp;#39;Sponsoring and donations&amp;#39; /&amp;gt;\n    &amp;lt;/a&amp;gt;\n  &amp;lt;/p&amp;gt;\n\n  &amp;lt;p style=&amp;#39;margin: 12px 0;&amp;#39;&amp;gt;\n    &amp;lt;a href=&amp;#39;https://community-scripts.org/scripts/semaphore&amp;#39; target=&amp;#39;_blank&amp;#39; rel=&amp;#39;noopener noreferrer&amp;#39;&amp;gt;\n      &amp;lt;img src=&amp;#39;https://img.shields.io/badge/\ud83d\udce6-Open%20Script%20Page-00617f&amp;#39; alt=&amp;#39;Open script page&amp;#39; /&amp;gt;\n    &amp;lt;/a&amp;gt;\n  &amp;lt;/p&amp;gt;\n\n  &amp;lt;span style=&amp;#39;margin: 0 10px;&amp;#39;&amp;gt;\n    &amp;lt;i class=\&amp;#34;fa fa-github fa-fw\&amp;#34; style=\&amp;#34;color: #f5f5f5;\&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;\n    &amp;lt;a href=&amp;#39;https://github.com/community-scripts/ProxmoxVE&amp;#39; target=&amp;#39;_blank&amp;#39; rel=&amp;#39;noopener noreferrer&amp;#39; style=&amp;#39;text-decoration: none; color: #00617f;&amp;#39;&amp;gt;GitHub&amp;lt;/a&amp;gt;\n  &amp;lt;/span&amp;gt;\n  &amp;lt;span style=&amp;#39;margin: 0 10px;&amp;#39;&amp;gt;\n    &amp;lt;i class=\&amp;#34;fa fa-comments fa-fw\&amp;#34; style=\&amp;#34;color: #f5f5f5;\&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;\n    &amp;lt;a href=&amp;#39;https://github.com/community-scripts/ProxmoxVE/discussions&amp;#39; target=&amp;#39;_blank&amp;#39; rel=&amp;#39;noopener noreferrer&amp;#39; style=&amp;#39;text-decoration: none; color: #00617f;&amp;#39;&amp;gt;Discussions&amp;lt;/a&amp;gt;\n  &amp;lt;/span&amp;gt;\n  &amp;lt;span style=&amp;#39;margin: 0 10px;&amp;#39;&amp;gt;\n    &amp;lt;i class=\&amp;#34;fa fa-exclamation-circle fa-fw\&amp;#34; style=\&amp;#34;color: #f5f5f5;\&amp;#34;&amp;gt;&amp;lt;/i&amp;gt;\n    &amp;lt;a href=&amp;#39;https://github.com/community-scripts/ProxmoxVE/issues&amp;#39; target=&amp;#39;_blank&amp;#39; rel=&amp;#39;noopener noreferrer&amp;#39; style=&amp;#39;text-decoration: none; color: #00617f;&amp;#39;&amp;gt;Issues&amp;lt;/a&amp;gt;\n  &amp;lt;/span&amp;gt;\n&amp;lt;/div&amp;gt;\n&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;digest&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;15267c40355a85a4ab11b23210a628ae13b32118&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;features&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;nesting=1,keyctl=1&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;hostname&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;semaphore&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;memory&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;2048&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;net0&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;name=eth0,bridge=vmbr0,hwaddr=BC:24:11:61:DD:02,ip=dhcp,type=veth&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;onboot&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;ostype&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ubuntu&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;rootfs&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;TGroup1:vm-111-disk-0,size=4G&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;swap&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;512&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;tags&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;community-script;dev_ops&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;timezone&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;America/Chicago&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;unprivileged&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+    aria-label=&#34;Copy code&#34;
+    data-copied-label=&#34;Copied!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2&gt;Notes&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;notes&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#notes&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Add manual operational notes here.&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
