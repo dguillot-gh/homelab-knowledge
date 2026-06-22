@@ -11,32 +11,35 @@ type: "documentation"
 
 ## Overview
 
-The Jellyseerr container is a dedicated lightweight virtualization environment deployed within the homelab infrastructure. It is implemented as an LXC (Linux Container) instance based on Debian, designed to efficiently host the Jellyseerr application and serve as a centralized interface for smart home management and media control.
+The Jellyseerr Container is a lightweight virtualized environment deployed within the homelab infrastructure, designed to efficiently host the Jellyseerr application. It is implemented as an LXC (Linux Container) instance based on Debian, providing a stable, isolated, and resource-efficient environment for centralized smart home management and media control services.
 
-This setup is optimized for resource efficiency, utilizing a containerized environment to manage specialized services without consuming excessive host resources.
+This containerized approach optimizes resource utilization by segregating specialized services, ensuring that home automation and media management functions operate without significantly impacting the host system's performance.
 
 ## Container Details
 
-This container provides a stable and dedicated environment for running critical home automation and media management services.
+This container serves as the dedicated execution environment for the Jellyseerr application, acting as the centralized interface for managing interconnected smart home devices and media collections.
 
-**Functionality:**
-The primary function of this container is to host the Jellyseerr application, which acts as a centralized control panel for managing interconnected smart home devices and media collections. By operating within an LXC, the system ensures efficient resource utilization while providing essential functionality for managing complex smart home systems.
+### Functionality
+The primary purpose of this container is to host and operate the Jellyseerr application. It provides a dedicated platform for:
+*   **Centralized Control:** Serving as the primary control panel for managing smart home devices.
+*   **Media Management:** Organizing and displaying media collections.
+*   **System Isolation:** Operating within an LXC environment ensures stability and resource efficiency.
 
-**Deployment Notes:**
-The deployment utilized community-provided scripts and configurations, ensuring a streamlined and standardized installation process for this specific application.
+### Deployment Notes
+The installation and configuration of this container utilized standardized, community-provided scripts and configurations, streamlining the deployment process and ensuring adherence to a recognized setup methodology.
 
 ## Resource Allocation
 
-The following table summarizes the physical and allocated resources for the container:
+The following table details the physical and allocated resources assigned to the Jellyseerr container:
 
 | Metric | Value | Description |
 | :--- | :--- | :--- |
 | **VMID** | 108 | Virtual Machine Identifier |
-| **Node** | pve | Host System |
-| **OS** | Debian | Container Operating System |
+| **Host System** | pve | Underlying Proxmox Host System |
+| **Container OS** | Debian | Container Operating System Distribution |
 | **Status** | running | Current operational status |
-| **IP Address** | dhcp | Assigned IP address |
-| **RAM** | 2048 MB | Allocated Memory |
+| **IP Address** | dhcp | Assigned Network IP Address |
+| **Allocated RAM** | 2048 MB | Allocated Memory for the container |
 | **CPU Cores** | 2 | Allocated Processing Cores |
 | **Disk Space** | 31.2 GB | Dedicated Storage Volume |
-| **Tags** | community-script | Deployment Tag/Source |
+| **Deployment Tag** | community-script | Source/Method of Deployment |
