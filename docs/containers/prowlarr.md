@@ -3,9 +3,9 @@
 
 ## Overview
 
-Prowlarr is an LXC container deployed within the homelab environment, dedicated to managing and automating the indexing and management of media sources. It functions as a critical component in the media management stack, designed to simplify the process of discovering, tracking, and organizing desired media content.
+Prowlarr is a dedicated service deployed as an LXC container within the homelab environment. Its primary function is to manage and automate the indexing and organization of various media sources. Prowlarr serves as a critical component in the overall media management stack, designed to simplify the process of discovering, tracking, and organizing desired media content.
 
-The container utilizes a lightweight Debian operating system and is provisioned with sufficient resources for its automation tasks. It integrates seamlessly into the existing network topology by obtaining its network address via DHCP.
+The container utilizes a lightweight Debian operating system and is provisioned with the necessary resources to perform its automation tasks efficiently. It integrates into the existing network topology by obtaining its IP address dynamically via DHCP.
 
 ## Technical Specifications
 
@@ -13,7 +13,7 @@ The container utilizes a lightweight Debian operating system and is provisioned 
 | :--- | :--- |
 | **Service Name** | prowlarr |
 | **Container Type** | LXC |
-| **Node Host** | pve |
+| **Host Node** | pve |
 | **Operating System** | Debian |
 | **Status** | Running |
 | **IP Configuration** | DHCP |
@@ -21,7 +21,7 @@ The container utilizes a lightweight Debian operating system and is provisioned 
 
 ## Resource Allocation
 
-The container is allocated the following resources:
+The container is allocated the following hardware and storage resources:
 
 *   **VMID:** 104
 *   **CPU Cores:** 2
@@ -31,4 +31,6 @@ The container is allocated the following resources:
 
 ## Functional Role
 
-Prowlarr operates as an indexer and manager, responsible for monitoring various media sources (such as torrent trackers or media indexers) to facilitate automated discovery and organization. Its presence, defined by the `arr-stack` tag, signifies its role in automating the upstream process of finding and tracking desired files, thereby streamlining the workflow for media consumption within the homelab.
+Prowlarr functions as a media indexer and manager. Its core responsibility is to monitor disparate media sources, such as torrent trackers or dedicated media indexers, to facilitate automated discovery and centralized organization.
+
+By operating within the `arr-stack` tag, Prowlarr streamlines the upstream process of finding and tracking desired files. This automated workflow significantly enhances the efficiency of media acquisition and organization within the homelab environment.
