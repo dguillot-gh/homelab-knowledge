@@ -3,37 +3,41 @@
 
 ## Overview
 
-This documentation details the configuration and purpose of the Tunarr container, deployed as an LXC instance within the homelab environment. This setup utilizes lightweight virtualization to host the Tunarr application, serving as a centralized IPTV media server.
+This document details the deployment, configuration, and functional role of the Tunarr application, hosted within a Linux Container (LXC) instance on the homelab infrastructure. This setup utilizes lightweight virtualization to provide a centralized, isolated, and resource-efficient IPTV media server.
 
 ### Container Specifications
 
-| Attribute | Value | Notes |
+The following table outlines the technical specifications and environment details of the Tunarr LXC container.
+
+| Attribute | Value | Details |
 | :--- | :--- | :--- |
-| **Title** | tunarr | Application/Container Name |
-| **LXC ID (VMID)** | 125 | Proxmox Virtual Environment ID |
-| **Host Node** | pve | Proxmox Host System |
-| **Status** | Running | Current operational state |
-| **IP Address** | DHCP | Assigned dynamically via DHCP |
-| **OS** | Debian | Container Operating System |
-| **Resource Allocation** | | |
-| RAM | 2 GB (2048 MB) | Allocated memory |
-| CPU Cores | 3 | Allocated processing units |
-| Disk Space | 4.84 GB | Allocated storage |
-| **Last Updated** | 2026-06-18 14:07 UTC | Documentation revision date |
-| **Tags** | `community-script`, `iptv` | Categorization |
+| **Application Name** | `tunarr` | Internal application/container name. |
+| **LXC ID (VMID)** | `125` | Proxmox Virtual Environment ID. |
+| **Host System** | `pve` | Proxmox physical host system. |
+| **Operational Status** | `Running` | Current operational state of the container. |
+| **Network Configuration** | DHCP | IP address is dynamically assigned via DHCP. |
+| **Operating System** | Debian | Container operating system distribution. |
+| **Resource Allocation** | | Allocated resources for the container. |
+| RAM | 2 GB (2048 MB) | Allocated physical memory. |
+| CPU Cores | 3 | Allocated processing units. |
+| Disk Space | 4.84 GB | Allocated storage volume. |
+| **Documentation Version** | 1.0 | Current revision date. |
+| **Tags** | `community-script`, `iptv` | Categorization for asset management. |
 
 ## Functional Description
 
-The primary function of this LXC container is to host and manage the Tunarr application, establishing a centralized IPTV media server for the homelab.
+The primary objective of this LXC container is to serve as a dedicated, centralized IPTV media management and distribution platform for the homelab environment.
 
 ### Role and Purpose
 
-The Tunarr container aggregates and organizes various IPTV streams, providing a unified media backbone for television content. This setup facilitates centralized management and smooth distribution of streaming services across the home network.
+The Tunarr container serves as the core IPTV media server, responsible for the aggregation, indexing, and management of disparate IPTV streams. By operating within an isolated LXC environment, this setup achieves enhanced security and service isolation while optimizing resource utilization on the Proxmox host.
 
-By operating as an isolated LXC instance, the configuration leverages virtualization techniques to ensure resource efficiency and service isolation while maintaining a manageable footprint within the Proxmox environment.
+**Key Functions:**
 
-### System Functionality
+1.  **Centralized Aggregation:** The Tunarr application indexes and aggregates various IPTV sources, creating a unified catalog of available television content.
+2.  **Media Distribution:** The container functions as a dedicated media server, providing aggregated content to client devices and other services within the local network.
+3.  **Resource Efficiency:** Leveraging the lightweight nature of LXC virtualization, the service operates efficiently using only 2 GB of RAM and 3 CPU cores, ensuring optimal resource allocation for the overall Proxmox host system.
 
-1.  **Centralized Aggregation:** The container runs the Tunarr utility, which is responsible for indexing, managing, and organizing disparate IPTV streams.
-2.  **Media Distribution:** It acts as a media server, making the aggregated television content accessible to other devices and clients within the homelab network.
-3.  **Resource Efficiency:** The use of LXC virtualization allows the Tunarr service to operate efficiently by utilizing only 2 GB of RAM and 3 CPU cores, optimizing resource usage on the Proxmox host.
+### Deployment Context
+
+The implementation of Tunarr within an LXC container facilitates a modular and manageable deployment strategy. This approach ensures that the IPTV service is compartmentalized, allowing for straightforward backup, snapshotting, and management, adhering to best practices for homelab virtualization.
