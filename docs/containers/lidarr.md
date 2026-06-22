@@ -1,35 +1,42 @@
 
-title: "lidarr"
-vmid: "127"
-node: "pve"
-status: "running"
-ip: "dhcp"
-updated: "2026-06-18 14:07 UTC"
-type: "docs"
----
+# Lidarr Media Management Server
 
-## Overview
+## 📄 Overview
 
-The Lidarr service is deployed as a dedicated container within the homelab environment, utilizing the LXC virtualization technology with Debian as its operating system. This setup provides an efficient and lightweight environment for hosting media management functionalities. The container is managed by the underlying Proxmox infrastructure, demonstrating effective resource isolation and utilization.
+The Lidarr service is deployed as a dedicated container within the homelab environment, leveraging the lightweight and efficient LXC virtualization technology. It operates on a Debian operating system, providing an isolated and streamlined environment for hosting critical media management functionalities. This container is managed directly by the underlying Proxmox infrastructure, ensuring effective resource isolation and optimized utilization of host resources.
 
-The container is allocated 1024 MB of RAM and 2 CPU cores, with a dedicated disk partition of 23.54 GB reserved for its operations. This configuration ensures that the media application and its dependencies are isolated, contributing to a streamlined and efficient homelab setup.
+### System Configuration
 
-## Functionality
+The container is allocated specific hardware resources to ensure stable operation and performance:
 
-Lidarr serves as a centralized media management solution, designed to organize, index, and track personal media libraries. Its primary function is to automate the process of locating, sorting, and managing media files sourced from various networks.
+*   **Memory (RAM):** 1024 MB
+*   **CPU Cores:** 2
+*   **Disk Space:** 23.54 GB
 
-The container is specifically configured to integrate various acquisition methods, including torrent and usenet protocols, allowing it to effectively manage media assets sourced through P2P and usenet channels. This automation integrates various media acquisition and organization workflows into a single, centralized system.
+This configuration ensures that the media application and its dependencies are securely isolated, contributing to a highly efficient and stable homelab setup.
 
-## Resources
+## ⚙️ Functionality
 
-| Attribute | Value |
-| :--- | :--- |
-| **VMID** | 127 |
-| **Node** | pve |
-| **Status** | running |
-| **IP Address** | dhcp |
-| **Operating System** | Debian |
-| **Memory (RAM)** | 1024 MB |
-| **CPU Cores** | 2 |
-| **Disk Space** | 23.54 GB |
-| **Tags** | arr, community-script, torrent, usenet |
+Lidarr serves as a centralized media management solution, designed to automate and streamline the process of organizing, indexing, and tracking personal media libraries. Its core function is to automate the process of locating, sorting, and managing media files sourced from various networks.
+
+### Media Acquisition Workflow
+
+The container is specifically configured to integrate diverse media acquisition methods, enabling comprehensive management of assets sourced through various protocols:
+
+*   **Protocol Integration:** Supports integration with both torrent and usenet acquisition protocols.
+*   **Automation:** Facilitates the integration of media acquisition and organization workflows, consolidating diverse P2P and usenet sources into a single, centralized system.
+
+## 📊 Technical Specifications
+
+| Attribute | Value | Notes |
+| :--- | :--- | :--- |
+| **Service** | Lidarr | Centralized media management system |
+| **Virtualization** | LXC / Proxmox | Containerized environment |
+| **Operating System** | Debian | Base OS for the container |
+| **VMID** | 127 | Proxmox Virtual Machine ID |
+| **IP Address** | DHCP | Dynamically assigned IP address |
+| **Status** | Running | Service is currently operational |
+| **Memory (RAM)** | 1024 MB | Allocated memory for the container |
+| **CPU Cores** | 2 | Allocated CPU resources |
+| **Disk Space** | 23.54 GB | Allocated disk partition |
+| **Tags** | `arr`, `community-script`, `torrent`, `usenet` | Categorization for management |
