@@ -11,32 +11,32 @@ type: "documentation"
 
 ## Overview
 
-This document describes the deployment and configuration details for the Sonarr media management service, deployed within an LXC container in the homelab environment. Sonarr is a critical component of the centralized media server infrastructure, responsible for the automated organization and management of digital media content.
+This document details the deployment, configuration, and operational specifications for the Sonarr media management service, which is hosted within an LXC container environment in the homelab infrastructure. Sonarr serves as a critical component in the centralized media server stack, automating the discovery, organization, and management of digital media content.
 
-The container utilizes a Debian operating system and is designed to isolate and efficiently run essential automation tasks. This containerization approach ensures that the Sonarr service is manageable, scalable, and easily integrated into the overall homelab automation stack.
+The containerization approach utilizes a lightweight Debian operating system, providing an isolated, reproducible, and highly manageable execution environment for complex automation tasks. This methodology ensures Sonarr operates efficiently, minimizes system footprint, and integrates seamlessly into the overall homelab automation framework.
 
 ## Container Specifications
 
-The Sonarr container is provisioned with the following resource allocation and system details:
+The following table details the allocated resources and system attributes for the Sonarr container:
 
-| Attribute | Value | Description |
+| Attribute | Value | Detail |
 | :--- | :--- | :--- |
-| **VMID** | 101 | Virtual Machine ID |
-| **Node** | pve | Host system |
-| **Status** | running | Current operational state |
-| **IP Address** | dhcp | Dynamically assigned IP |
+| **VMID** | 101 | Virtual Machine Identifier |
+| **Host Node** | pve | Physical host system |
+| **Status** | running | Current operational state of the container |
+| **IP Address** | dhcp | Network address assignment (dynamically managed) |
 | **Operating System** | Debian | Base OS distribution |
-| **RAM** | 1024 MB | Allocated system memory |
+| **Allocated RAM** | 1024 MB | System memory allocation |
 | **CPU Cores** | 2 | Allocated processing cores |
-| **Disk Space** | 3.86 GB | Dedicated storage volume |
-| **Tags** | arr-stack, community-script | Deployment and stack categorization |
+| **Disk Space** | 3.86 GB | Dedicated storage volume for application data |
+| **Tags** | arr-stack, community-script | Deployment and infrastructure categorization |
 
-## Functionality
+## Functional Capabilities
 
-Sonarr operates as an automated media organization tool. Its primary functions include:
+Sonarr is designed to perform end-to-end automation for media ingestion and organization. Its core functional capabilities are as follows:
 
-1.  **Monitoring:** Continuously monitors configured indexers and download clients for new content.
-2.  **Organization:** Automatically sorts and organizes downloaded movies and television shows based on predefined rules.
-3.  **Library Management:** Integrates downloaded content into a centralized, manageable media library.
+1.  **Indexer Monitoring:** Continuously monitors configured third-party indexers (e.g., TVDB, The Movie Database) and dedicated download clients to detect newly available media content.
+2.  **Automated Organization:** Implements predefined rules to automatically sort, rename, and categorize downloaded media files (movies and television shows) based on established metadata and naming conventions.
+3.  **Library Integration:** Integrates successfully processed content into a centralized, structured media library, ensuring all media assets are discoverable and easily accessible.
 
-By running Sonarr in a container, the homelab achieves a robust and isolated solution for managing media consumption, acting as a core automation script for the entire media stack.
+By deploying Sonarr within an isolated container, the homelab achieves a robust, scalable, and highly isolated solution for media management. This setup acts as a foundational automation layer, centralizing the complexities of content acquisition and organization for the entire media ecosystem.
