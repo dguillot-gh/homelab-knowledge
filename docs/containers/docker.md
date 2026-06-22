@@ -1,34 +1,41 @@
 
-```markdown
 # Docker Host Container Documentation
 
 ## Overview
-This LXC container, named `docker`, serves as the foundational platform for containerized services and automated tooling within the homelab environment. It operates on a dedicated Debian operating system, providing a stable and isolated environment specifically designed for hosting and managing Docker-based applications and infrastructure services.
+
+The `docker` container serves as the foundational operating environment for containerized services, infrastructure management, and automated tooling within the homelab infrastructure. Hosted via an LXC container, it provides a stable, isolated, and dedicated platform specifically designed for the deployment and management of Docker-based applications and associated services.
 
 ## Container Specifications
 
-| Attribute | Value | Details |
+The following table details the technical specifications and operational details of the container:
+
+| Attribute | Value | Description |
 | :--- | :--- | :--- |
-| **VMID** | 119 | Unique identifier for the virtual machine. |
-| **Node** | pve | Host system. |
-| **Status** | running | Current operational state. |
-| **IP Address** | dhcp | Dynamically assigned IP address. |
-| **OS** | Debian | Operating System running within the container. |
-| **RAM** | 4096 MB | Allocated memory. |
+| **Name** | `docker` | Internal designation of the container. |
+| **VMID** | 119 | Unique identifier for the underlying virtual machine instance. |
+| **Host System** | `pve` | The parent Proxmox Virtual Environment host system. |
+| **Status** | `running` | Current operational state of the container. |
+| **IP Address** | `dhcp` | IP address assigned dynamically via DHCP. |
+| **Operating System** | Debian | The operating system running within the container environment. |
+| **Memory (RAM)** | 4096 MB | Allocated physical memory resources. |
 | **CPU Cores** | 3 | Allocated processing cores. |
-| **Disk Space** | 136.74 GB | Total allocated disk space. |
-| **Last Updated** | 2026-06-18 14:07 UTC | Timestamp of the last documented update. |
+| **Disk Space** | 136.74 GB | Total allocated disk storage. |
+| **Last Updated** | 2026-06-18 14:07 UTC | Timestamp of the last modification or documentation update. |
 
 ## Role and Functionality
-The `docker` container is explicitly configured to function as the core engine for managing containerized services and secure networking within the homelab infrastructure.
+
+The primary function of the `docker` container is to act as the central orchestration engine and networking hub for homelab services.
 
 ### Primary Functions
-1.  **Container Orchestration:** Serves as the primary host environment for deploying, running, and managing Docker containers.
-2.  **Script Execution:** Functions as a dedicated environment for executing community-developed scripts and automation tools.
-3.  **Secure Networking:** Leverages networking tools (indicated by the `tailscale` tag) to establish secure, private network access and identity management across the homelab.
 
-### Tags
-*   `docker`: Designates the container's core function as a Docker environment.
-*   `community-script`: Indicates the container hosts automated scripts or community tools.
-*   `tailscale`: Identifies the container's role in providing secure network connectivity.
-```
+1.  **Container Orchestration:** Acts as the core host environment for deploying, managing, and running all Docker containers and associated services.
+2.  **Automation and Scripting:** Provides a dedicated execution environment for running community-developed scripts, automation tools, and infrastructure management tasks.
+3.  **Secure Networking:** Integrates networking functionalities (indicated by the use of `tailscale`) to establish secure, private network access, identity management, and secure connectivity across the entire homelab infrastructure.
+
+### Metadata and Tags
+
+The following tags define the specific roles and capabilities associated with this container:
+
+*   `docker`: Designates the container's primary role as a Docker host environment.
+*   `community-script`: Indicates the container's function as a repository for automated scripts and community tools.
+*   `tailscale`: Identifies the container's role in facilitating secure network communication and identity management.
