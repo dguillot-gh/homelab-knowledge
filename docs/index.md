@@ -4,24 +4,24 @@
 **Status:** Auto-generated
 **Last Updated:** 2026-06-18
 
-## Infrastructure Overview
+## 1. Infrastructure Overview
 
-This document provides an inventory and navigation structure for the self-hosted homelab infrastructure, primarily managed using Proxmox Virtual Environment (PVE) and Linux Containers (LXC).
+This document serves as the central repository for the inventory, configuration, and operational details of the self-hosted homelab infrastructure. The environment is primarily managed through the Proxmox Virtual Environment (PVE) hypervisor, utilizing Linux Containers (LXC) for workload distribution and isolation.
 
-### Current Resource Inventory
+### 1.1 Resource Inventory
 
-The following table summarizes the current state of the virtualized resources:
+The following table summarizes the current state and allocation of the virtualized resources within the homelab environment:
 
-| Resource Type | Count | Notes |
+| Resource Type | Count | Description |
 | :--- | :--- | :--- |
-| **Proxmox Nodes (VM Hosts)** | 1 | Primary virtualization host. |
-| **LXC Containers** | 28 | Linux Containers running on the Proxmox host. |
+| **Proxmox Nodes (VM Hosts)** | 1 | Primary virtualization host managing all workloads. |
+| **LXC Containers** | 28 | Linux Containers provisioned and running on the Proxmox host. |
 
-## Documentation Navigation
+## 2. Documentation Navigation
 
-The complete documentation is organized into the following sectional directories:
+The full documentation is organized into two primary sectional directories, providing detailed information on the virtualization hosts and containerized workloads.
 
 *   [Nodes Documentation](./nodes/index.md)
-    *   *Details information regarding Proxmox virtualization hosts and configuration.*
+    *   Details configuration, operational status, and settings for all Proxmox virtualization hosts.
 *   [Containers Documentation](./containers/index.md)
-    *   *Details information regarding all running LXC Containers and their configurations.*
+    *   Provides detailed specifications, configuration files, and operational status for all running LXC Containers.
