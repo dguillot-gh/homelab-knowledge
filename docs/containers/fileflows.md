@@ -1,26 +1,31 @@
 
 # Fileflows Automation Container Documentation
 
-## General Information
+## 1. General Information
+
+This section provides an overview of the container's identity and current operational status within the homelab environment.
 
 | Attribute | Value |
 | :--- | :--- |
 | **Container Name** | `fileflows` |
 | **VMID** | 115 |
 | **Host Node** | `pve` |
+| **Operating Environment** | LXC Container |
 | **Status** | Running |
 | **Last Updated** | 2026-06-18 14:07 UTC |
-| **Type** | Homelab Automation Workspace (LXC) |
+| **Container Type** | Homelab Automation Workspace |
 
-## Overview
+## 2. Overview
 
-The `fileflows` container is a dedicated Lightweight Virtual Machine (LXC) provisioned within the homelab environment. It serves as an isolated, stable workspace designed specifically for executing community-developed automation scripts.
+The `fileflows` container is a dedicated Lightweight Virtual Machine (LXC) provisioned within the homelab environment. Its primary purpose is to establish an isolated and stable execution environment specifically for executing community-developed automation scripts.
 
-The primary objective of this container is to provide a secure and isolated execution environment for complex file management, synchronization, and media organization workflows. By isolating automation tasks within this dedicated container, the setup ensures that custom scripting solutions do not introduce instability or performance risks to the main host operating system.
+The design philosophy behind this container is to provide a secure sandbox for complex file management, synchronization, and media organization workflows. By isolating automation tasks within this dedicated environment, the setup mitigates the risk of instability or performance degradation to the main host operating system.
 
-## Technical Specifications
+## 3. Technical Specifications
 
-### System Details
+### 3.1 System Details
+
+This section details the underlying operating system and network configuration of the container.
 
 | Attribute | Detail |
 | :--- | :--- |
@@ -30,21 +35,23 @@ The primary objective of this container is to provide a secure and isolated exec
 | **Current Status** | Running |
 | **IP Configuration** | DHCP |
 
-### Resource Allocation
+### 3.2 Resource Allocation
 
-| Resource | Specification |
-| :--- | :--- |
-| **CPU Cores** | 2 |
-| **Memory (RAM)** | 4 GB (4048 MB) |
-| **Disk Space** | 7.78 GB |
-| **Tags** | `automation`, `community-script`, `media` |
+The following table specifies the allocated resources for the `fileflows` container.
 
-## Functionality
+| Resource | Specification | Notes |
+| :--- | :--- | :--- |
+| **CPU Cores** | 2 | Allocated for processing automation tasks. |
+| **Memory (RAM)** | 4 GB (4048 MB) | Sufficient allocation for complex synchronization routines. |
+| **Disk Space** | 7.78 GB | Allocated for script execution and media asset storage. |
+| **Tags** | `automation`, `community-script`, `media` | Metadata tags for system management and organization. |
 
-The `fileflows` container functions as an automated scripting environment dedicated to file flow management. Its core capabilities include:
+## 4. Functionality
 
-1.  **Automation Execution:** Providing an isolated context for running community-contributed scripts designed for file flow tasks.
-2.  **Synchronization Workflows:** Executing complex synchronization routines necessary for managing file transfers across the network.
-3.  **Media Asset Processing:** Handling automated tasks related to organizing, processing, and managing media assets within the defined workflows.
+The `fileflows` container serves as a specialized, automated environment focused on managing file flows and media assets. Its core capabilities are defined by the following functions:
 
-This dedicated setup allows advanced users to implement complex, custom automation logic in a controlled, stable, and isolated environment.
+*   **Automation Execution:** Provides an isolated and stable context for running community-contributed scripts and automation routines.
+*   **Synchronization Workflows:** Executes complex synchronization routines necessary for managing and transferring files across the local network.
+*   **Media Asset Processing:** Handles automated tasks related to the organization, processing, and management of media assets according to defined workflows.
+
+This dedicated setup allows advanced users to implement complex, custom automation logic within a highly controlled, stable, and isolated environment.
