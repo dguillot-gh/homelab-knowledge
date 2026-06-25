@@ -1,6 +1,6 @@
 
 ---
-title: "Caddy Web Server Container"
+title: "Caddy Web Server Container Documentation"
 vmid: "118"
 node: "pve"
 status: "running"
@@ -11,28 +11,30 @@ type: "documentation"
 
 ## Overview
 
-This document provides detailed information regarding the deployment, configuration, and operational role of the `caddy` LXC container within the homelab infrastructure. This container is designated as a dedicated host for serving web traffic, utilizing the Caddy reverse proxy to manage HTTP communication and automate the handling of SSL/TLS certificate management.
+This document details the deployment, configuration, and operational role of the `caddy` LXC container within the homelab infrastructure. This container functions as the centralized web traffic gateway, leveraging the Caddy reverse proxy to manage HTTP communication, secure connections, and automated SSL/TLS certificate handling for internal services.
 
 ## Container Description
 
-The `caddy` instance is deployed as an LXC container utilizing a Debian-based operating system. Its primary function is to establish a secure and stable entry point for internal services across the network.
+The `caddy` instance is deployed as an LXC container running a Debian-based operating system. Its core function is to establish a secure and stable entry point for all network services.
 
-Caddy has been selected as the core web server solution due to its robust architecture, simplified configuration syntax, and automatic management capabilities for complex security protocols, specifically HTTP/2 and TLS/SSL termination.
+Caddy has been selected as the core web server solution due to its robust architecture, streamlined configuration syntax, and native capabilities for automated management of complex security protocols, including HTTP/2 and TLS/SSL termination.
 
 ## Technical Specifications
 
 ### Hardware and Resource Allocation
 
-| Specification | Value | Notes |
+The following table outlines the physical resource allocation and configuration details of the container.
+
+| Specification | Value | Details |
 | :--- | :--- | :--- |
-| **VMID** | 118 | Unique identifier for the virtual machine. |
-| **Host Node** | pve | The underlying Proxmox host machine. |
+| **VMID** | 118 | Unique identifier for the virtual machine instance. |
+| **Host Node** | pve | The underlying Proxmox host machine hosting the container. |
 | **Status** | running | Current operational state of the container. |
-| **Operating System** | Debian | Base Linux distribution utilized. |
-| **Memory (RAM)** | 512 MB | Allocated physical memory. |
-| **Disk Space** | 19.52 GB | Total available storage space. |
+| **Operating System** | Debian | Base Linux distribution utilized for the container environment. |
+| **Memory (RAM)** | 512 MB | Allocated physical memory resources. |
+| **Disk Space** | 19.52 GB | Total available storage capacity. |
 | **CPU Cores** | 1 | Allocated processing unit. |
-| **IP Address** | dhcp | Network address obtained via DHCP. |
+| **IP Address** | dhcp | Network address dynamically assigned via DHCP. |
 
 ### Container Metadata
 
@@ -40,13 +42,14 @@ Caddy has been selected as the core web server solution due to its robust archit
 | :--- | :--- |
 | **Tags** | community-script, tailscale, webserver |
 
-## Operational Role and Context
+## Operational Context and Role
 
-The `caddy` container serves a critical function in the homelab environment: providing a centralized, secure gateway for network services.
+The `caddy` container plays a critical role in the homelab environment by serving as a centralized, secure gateway for network services.
 
-The container is integrated into a highly networked infrastructure, indicated by its associated tags:
-*   **`tailscale`**: Indicates integration with secure overlay networking, allowing the container to participate in a secure, decentralized network fabric.
-*   **`community-script`**: Suggests the use of community-developed automation scripts for deployment, management, or service provisioning.
-*   **`webserver`**: Defines its primary role as an HTTP/S service provider.
+The associated metadata tags define the container's integration within the broader network security and automation framework:
 
-This context confirms that the container is positioned not merely as an isolated server, but as an active component within a secure, interconnected homelab ecosystem designed for managed service delivery.
+*   **`webserver`**: Defines the primary function of the container as an HTTP/S service provider and reverse proxy.
+*   **`tailscale`**: Indicates integration with Tailscale, establishing secure, decentralized overlay networking, which enhances secure communication and access management across the network fabric.
+*   **`community-script`**: Suggests that the deployment, management, or service provisioning workflow utilizes community-developed automation scripts, emphasizing a focus on self-managed and reproducible infrastructure practices.
+
+This context confirms that the container is not merely an isolated server, but an active, secure component within an interconnected homelab ecosystem designed for managed service delivery and network security.
