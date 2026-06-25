@@ -3,9 +3,9 @@
 
 ## Overview
 
-The `flaresolverr` container is a lightweight, dedicated LXC (Linux Container) instance deployed within the homelab infrastructure. It is specifically configured to serve as a specialized automation engine responsible for managing and executing custom scripts related to infrastructure tasks. This setup prioritizes efficiency by utilizing minimal system resources, making it ideal for running focused services and automation utilities.
+The `flaresolverr` container is a specialized, lightweight LXC (Linux Container) instance deployed within the homelab infrastructure. Its primary function is to serve as a dedicated automation engine responsible for managing and executing custom scripts related to infrastructure tasks. This setup is designed for efficiency, utilizing minimal system resources to run focused services and complex automation utilities effectively.
 
-This container is tagged with `arr-stack` and `community-script`, defining its primary functional role in managing software application replication and executing custom automation scripts for system management across the homelab environment.
+This container is specifically tagged with `arr-stack` and `community-script`, defining its core responsibilities in managing software application replication and executing custom system automation across the homelab environment.
 
 ## System Specifications
 
@@ -23,7 +23,7 @@ This container is tagged with `arr-stack` and `community-script`, defining its p
 
 ### Resource Allocation
 
-The container is allocated the following resources to ensure efficient operation:
+The container is provisioned with the following resource limits to ensure efficient operation and stability:
 
 | Resource | Specification |
 | :--- | :--- |
@@ -33,7 +33,7 @@ The container is allocated the following resources to ensure efficient operation
 
 ## Functional Role
 
-The `flaresolverr` container functions as a critical automation utility, leveraging its specific tags to perform specialized infrastructure tasks within the homelab. Its defined responsibilities are:
+The `flaresolverr` container acts as a critical automation utility, leveraging its specific functional tags to perform specialized infrastructure management tasks. Its defined responsibilities are:
 
-1.  **Application Management (`arr-stack`):** It is utilized for the setup, management, and orchestration of applications requiring service replication, typically associated with stack-based deployment methodologies in containerized environments.
-2.  **Script Execution (`community-script`):** The container acts as a dedicated executor for custom scripts, streamlining complex deployment, system configuration, and troubleshooting processes, thereby serving as a specialized automation layer for the entire homelab infrastructure.
+1.  **Application Management (`arr-stack`):** This role is utilized for the setup, management, and orchestration of applications requiring service replication. It manages stack-based deployment methodologies within the containerized environment, ensuring consistent application management across the homelab.
+2.  **Script Execution (`community-script`):** The container functions as a dedicated executor for custom scripts. It streamlines complex deployment, system configuration, and troubleshooting processes, establishing a specialized automation layer for overall infrastructure management.
