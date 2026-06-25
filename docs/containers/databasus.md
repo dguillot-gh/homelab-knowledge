@@ -1,13 +1,13 @@
 
-# databasus
+# databasus: PostgreSQL Container Documentation
 
-This document provides detailed specifications and operational information for the `databasus` container, a dedicated PostgreSQL database server deployed within the homelab environment.
+This document provides detailed specifications and operational information for the `databasus` container, which hosts a dedicated PostgreSQL database server within the homelab environment.
 
 ## Overview
 
-The `databasus` container is configured to host a self-contained PostgreSQL database instance. It is deployed using containerization technology (LXC) based on a Debian operating system, ensuring strong isolation and simplified management of core data services.
+The `databasus` container serves as an isolated instance for running a PostgreSQL database. It is deployed using Linux Containers (LXC) based on a Debian operating system, which ensures strong isolation, streamlined management, and efficient integration into the overall homelab infrastructure.
 
-The primary objective of this setup is to provide a robust, isolated database service. This container is provisioned and managed utilizing community-developed setup scripts, facilitating streamlined deployment, maintenance, and the integration of automated backup strategies within the overall homelab infrastructure. By isolating the database workload, this setup ensures critical data services are efficiently organized alongside other homelab services (such as backup and storage).
+The primary objective of this setup is to provide a robust, isolated database service. By containerizing the database workload, this configuration facilitates simplified deployment, maintenance, and the integration of automated backup strategies, allowing critical data services to be organized alongside other homelab services (such as backup and storage).
 
 ## Container Specifications
 
@@ -16,16 +16,16 @@ The primary objective of this setup is to provide a robust, isolated database se
 | Attribute | Detail |
 | :--- | :--- |
 | **Name** | `databasus` |
+| **Host Node** | `pve` |
 | **Virtual Machine ID (VMID)** | 116 |
-| **Host Node** | pve |
 | **Status** | running |
-| **IP Address** | dhcp |
+| **IP Address** | DHCP |
 | **Last Updated** | 2026-06-18 14:07 UTC |
 | **Container Type** | docs |
 
 ### Resource Allocation
 
-This section details the allocated hardware resources for the container instance.
+The following section details the allocated hardware resources for the container instance.
 
 | Resource | Specification |
 | :--- | :--- |
@@ -36,7 +36,7 @@ This section details the allocated hardware resources for the container instance
 
 ### Deployment Tags
 
-The following tags are associated with the container, indicating its functional role, deployment methodology, and associated services:
+The following tags are associated with the container, indicating its functional role and deployment methodology:
 
 *   `backup`
 *   `community-script`
