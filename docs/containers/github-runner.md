@@ -3,13 +3,13 @@
 
 ## Overview
 
-The `github-runner` container is an isolated Lightweight Virtual Machine (LXC) instance deployed within the Proxmox Virtual Environment (PVE) homelab infrastructure. This container is specifically configured to serve as a dedicated Continuous Integration (CI) runner, providing a standardized, reproducible, and isolated environment for automated software delivery and execution.
+The `github-runner` container is an isolated Lightweight Virtual Machine (LXC) instance deployed within the Proxmox Virtual Environment (PVE) homelab infrastructure. This container is specifically configured to serve as a dedicated Continuous Integration (CI) runner, providing a standardized, reproducible, and isolated execution environment for automated software delivery and testing.
 
-This setup adheres strictly to containerization principles, ensuring that all CI/CD workflows are executed in a predictable and isolated manner, minimizing environmental drift.
+This deployment adheres strictly to containerization principles, ensuring that all CI/CD workflows are executed in a predictable and isolated manner, thereby minimizing environmental drift across the homelab system.
 
 ## Functional Role
 
-The primary function of this container is to act as a dedicated execution agent for automated workflows. It is utilized to pull code from GitHub repositories, execute automated build, test, and deployment scripts, thereby autonomously managing the software delivery pipeline central to the homelab system's functionality.
+The primary function of this container is to act as a dedicated execution agent for automated workflows. It is utilized to interact with GitHub repositories, pull source code, and execute automated build, test, and deployment scripts. This runner is central to autonomously managing the software delivery pipeline functionality of the homelab system.
 
 ## Technical Specifications
 
@@ -26,9 +26,9 @@ The primary function of this container is to act as a dedicated execution agent 
 | **Tags** | `ci`, `community-script` |
 | **Last Updated** | 2026-06-18 14:07 UTC |
 
-### Hardware Allocation
+### Resource Allocation
 
-The container is provisioned with the following allocated resources:
+The container is provisioned with the following hardware resources:
 
 | Resource | Specification |
 | :--- | :--- |
@@ -36,7 +36,7 @@ The container is provisioned with the following allocated resources:
 | **CPU Cores** | 2 |
 | **Disk Space** | Approximately 7.78 GB |
 
-## Detailed Resource Summary
+## Resource Summary
 
 | Parameter | Value |
 | :--- | :--- |
