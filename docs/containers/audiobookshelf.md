@@ -1,56 +1,56 @@
 
 # Audiobookshelf Media Server Container Deployment
 
-## Overview
+## 1. Overview
 
-This document details the deployment and configuration specifications for an Audiobookshelf media server container running within a Linux Container (LXC) environment on a Proxmox Virtual Environment (PVE) host.
+This document details the deployment and configuration specifications for an Audiobookshelf media server container running within a Linux Container (LXC) environment hosted on a Proxmox Virtual Environment (PVE) host.
 
-This setup is designed to provide a dedicated, resource-efficient solution for organizing, cataloging, and streaming personal audio content (books and podcasts). Utilizing containerization ensures the isolation of the media server application, optimizing resource utilization and maintaining a clean separation from the host operating system. This configuration represents an efficient and cost-effective method for managing media tasks within a homelab environment.
+This setup leverages containerization technology to provide a dedicated, resource-efficient solution for organizing, cataloging, and streaming personal audio content (books and podcasts). The use of LXC ensures strong process isolation, optimizing resource utilization and maintaining a clean separation from the host operating system. This configuration represents an efficient and scalable method for managing media tasks within a homelab environment.
 
-## Functional Role
+## 2. Functional Role
 
-The primary objective of this container is to serve as a centralized media management hub for personal audio libraries. The Audiobookshelf application within this container performs the following critical functions:
+The primary objective of this container is to serve as a centralized media management hub for personal audio libraries. The Audiobookshelf application executes the following critical functions:
 
-*   **Content Management:** Organizes, catalogs, and manages extensive personal audio libraries, including digital books and podcasts.
-*   **Media Streaming:** Facilitates the reliable streaming of organized audio content across the local network to connected devices.
-*   **Centralized Access:** Provides a single, unified point of access for users to enjoy and manage the entire media library on demand.
+*   **Content Management:** Organizes, catalogs, and manages extensive personal audio libraries, including digital books and podcast episodes.
+*   **Media Streaming:** Facilitates the reliable and efficient streaming of organized audio content across the local network to connected devices.
+*   **Centralized Access:** Provides a single, unified point of access for users to manage and stream the entire media library on demand.
 
-## System Specifications
+## 3. System Specifications
 
-### Container Details
+### 3.1 Container Details
 
-| Attribute | Value | Notes |
+| Attribute | Value | Description |
 | :--- | :--- | :--- |
-| **Application** | Audiobookshelf | The primary service running within the container. |
-| **Container Type** | LXC | Linux Container technology utilized for lightweight virtualization. |
-| **Host Node** | pve | The Proxmox Virtual Environment host machine. |
-| **Container Status** | Running | Current operational state of the container. |
-| **Container OS** | Debian-based | Underlying operating system of the container. |
+| **Application** | Audiobookshelf | The primary media server application running within the container. |
+| **Container Type** | LXC | Linux Container technology utilized for lightweight virtualization and resource isolation. |
+| **Host Environment** | Proxmox VE (PVE) | The virtualization host machine. |
+| **Container OS** | Debian-based | The underlying operating system of the container runtime. |
+| **Status** | Running | Current operational state of the container instance. |
 
-### Resource Allocation
+### 3.2 Resource Allocation
 
 The following resources have been allocated to ensure adequate performance for the media server and streaming operations.
 
-| Resource | Specification |
-| :--- | :--- |
-| **CPU Cores** | 2 |
-| **RAM** | 2048 MB (2 GB) |
-| **Disk Usage** | 4.84 GB |
+| Resource | Specification | Notes |
+| :--- | :--- | :--- |
+| **CPU Cores** | 2 | Allocated for media processing and concurrent streaming. |
+| **RAM** | 2048 MB (2 GB) | Allocated memory for the application and necessary services. |
+| **Disk Usage** | 4.84 GB | Total allocated storage space for media files and application data. |
 
-### Networking Configuration
+### 3.3 Networking Configuration
 
 | Attribute | Value | Details |
 | :--- | :--- | :--- |
-| **IP Addressing** | DHCP | IP address is dynamically assigned by the DHCP server. |
+| **IP Addressing** | DHCP | The container IP address is dynamically assigned by the DHCP server. |
 
-## System Summary
+## 4. System Summary
 
 | Metric | Value |
 | :--- | :--- |
 | **Proxmox VMID** | 121 |
 | **Container OS** | Debian |
-| **Total Allocated RAM** | 2048 MB |
+| **Allocated RAM** | 2048 MB |
+| **Allocated CPU** | 2 Cores |
 | **Total Disk Size** | 4.84 GB |
-| **CPU Allocation** | 2 Cores |
 | **Host System** | pve |
 | **Tags** | audiobook, community-script, podcast |
