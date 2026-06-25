@@ -1,51 +1,49 @@
 
 # Uptime Kuma Monitoring Service
 
-## Metadata
+## Summary
 
-| Attribute | Value |
-| :--- | :--- |
-| **VMID** | 109 |
-| **Node** | pve |
-| **Status** | running |
-| **IP Address** | DHCP |
-| **Last Updated** | 2026-06-18 14:07 UTC |
-| **Type** | monitoring\_service |
+The Uptime Kuma monitoring service is deployed as an optimized container within a Proxmox Virtual Environment (PVE) host, designed to provide a centralized, real-time dashboard for monitoring the availability and status of network services across the homelab infrastructure. This deployment leverages lightweight Linux Containers (LXC) to ensure efficient resource utilization and minimal overhead on the host system.
 
 ## Overview
 
-The Uptime Kuma container (VMID 109) is deployed as a dedicated monitoring service within the homelab environment. Its primary function is to provide a centralized, visually accessible dashboard for tracking the real-time status and availability of critical services across the network infrastructure.
+The primary function of this setup is to establish a unified monitoring platform. By hosting the Uptime Kuma application in a containerized environment, the system facilitates proactive infrastructure maintenance by providing a single pane of glass for tracking service uptime.
 
-By hosting the Uptime Kuma application, this setup facilitates proactive infrastructure maintenance, enabling users to quickly identify service outages and ensure the stability and reliability of the entire homelab ecosystem.
-
-The deployment strategy leverages a lightweight and efficient virtualization approach, utilizing Linux Containers (LXC) technology running on the Proxmox VE (PVE) host. This method ensures optimized resource utilization and efficient separation of services.
+This deployment strategy adheres to principles of efficiency and separation, utilizing LXC technology to isolate the monitoring service while allowing it to interact seamlessly with the host environment. This setup significantly reduces resource consumption while enhancing the stability and reliability of the overall homelab ecosystem.
 
 ## Technical Specifications
 
-The container is provisioned with optimized resources to ensure high performance while minimizing host system overhead.
+### Container Details
 
-| Attribute | Detail | Notes |
+| Attribute | Value | Description |
 | :--- | :--- | :--- |
-| **VMID** | 109 | Container Identifier |
-| **Status** | Running | Current operational state |
-| **Host Node** | pve | Proxmox VE host |
-| **Operating System** | Debian | Lightweight base distribution |
-| **CPU Allocation** | 1 Core | Dedicated CPU allocation |
-| **Memory (RAM)** | 1024 MB | Allocated system memory |
-| **Disk Space** | 11.73 GB | Total allocated storage capacity |
-| **Network IP** | DHCP | IP obtained dynamically from the network |
-| **Tags** | community-script, monitoring | Metadata for organization and scripting |
+| **Container ID (VMID)** | 109 | Unique identifier within the Proxmox VE environment. |
+| **Service** | Uptime Kuma | Monitoring application running within the container. |
+| **Operating System** | Debian | Lightweight base distribution for the container. |
+| **Status** | Running | Current operational state. |
+| **Network Configuration** | DHCP | Dynamic IP assignment from the host network. |
+| **Tags** | `community-script`, `monitoring` | Metadata for organization and scripting purposes. |
 
-## Deployment Details
+### Resource Allocation
 
-### Container Architecture
+The container is provisioned with carefully balanced resources to ensure optimal performance while minimizing impact on the host system.
 
-The Uptime Kuma service is implemented within a container environment, utilizing Debian as the base operating system. This choice is deliberate, prioritizing minimal resource consumption and a small footprint, which is ideal for a dedicated monitoring utility.
+| Attribute | Value | Notes |
+| :--- | :--- | :--- |
+| **CPU Allocation** | 1 Core | Dedicated CPU resource allocation. |
+| **Memory (RAM)** | 1024 MB | Allocated system memory. |
+| **Disk Space** | 11.73 GB | Total allocated storage capacity for application and historical data. |
 
-### Resource Management
+## Deployment Architecture
 
-Resource allocation (1 CPU Core and 1024 MB of RAM) has been carefully balanced to guarantee the application functions efficiently and responsively, even under moderate load. The allocation adheres to the principle of minimal overhead, ensuring that the container operates effectively without significantly impacting the performance of the underlying PVE host system.
+### Containerization Strategy
 
-### Storage
+The Uptime Kuma service is implemented using Linux Containers (LXC). This approach is chosen for its efficiency, allowing the service to run in an isolated environment that shares the host kernel, thereby minimizing the overhead associated with full Virtual Machines (VMs).
 
-The allocated disk space of 11.73 GB provides sufficient capacity for the Uptime Kuma application binaries, configuration files, and the storage of historical monitoring data, ensuring long-term data retention for historical analysis.
+### Resource Optimization
+
+The resource allocation (1 CPU Core and 1024 MB of RAM) is deliberately set to ensure the application functions efficiently. This configuration adheres to a principle of minimal overhead, guaranteeing responsive performance for the monitoring service while preserving significant resources for the Proxmox VE host and other critical homelab services.
+
+### Storage Management
+
+The allocated disk space of 11.73 GB provides adequate capacity for the application binaries, configuration files, and the storage of historical monitoring data. This ensures sufficient space for long-term data retention necessary for effective historical analysis.
